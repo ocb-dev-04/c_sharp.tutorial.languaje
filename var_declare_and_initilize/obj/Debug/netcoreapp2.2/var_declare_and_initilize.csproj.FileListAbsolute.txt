@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/bin/Debug/netcoreapp2.2/var_declare_and_initilize.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/bin/Debug/netcoreapp2.2/var_declare_and_initilize.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/bin/Debug/netcoreapp2.2/var_declare_and_initilize.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/bin/Debug/netcoreapp2.2/var_declare_and_initilize.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/bin/Debug/netcoreapp2.2/var_declare_and_initilize.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/obj/Debug/netcoreapp2.2/var_declare_and_initilize.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/obj/Debug/netcoreapp2.2/var_declare_and_initilize.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/obj/Debug/netcoreapp2.2/var_declare_and_initilize.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/obj/Debug/netcoreapp2.2/var_declare_and_initilize.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/obj/Debug/netcoreapp2.2/var_declare_and_initilize.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/var_declare_and_initilize/obj/Debug/netcoreapp2.2/var_declare_and_initilize.pdb
