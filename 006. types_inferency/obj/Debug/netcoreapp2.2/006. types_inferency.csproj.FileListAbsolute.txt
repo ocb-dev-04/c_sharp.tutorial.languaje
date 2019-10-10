@@ -1,0 +1,4 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/006. types_inferency/obj/Debug/netcoreapp2.2/006. types_inferency.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/006. types_inferency/obj/Debug/netcoreapp2.2/006. types_inferency.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/006. types_inferency/obj/Debug/netcoreapp2.2/006. types_inferency.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/006. types_inferency/obj/Debug/netcoreapp2.2/006. types_inferency.AssemblyInfo.cs
