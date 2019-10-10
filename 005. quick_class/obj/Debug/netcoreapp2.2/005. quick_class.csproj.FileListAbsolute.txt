@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/bin/Debug/netcoreapp2.2/005. quick_class.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/bin/Debug/netcoreapp2.2/005. quick_class.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/bin/Debug/netcoreapp2.2/005. quick_class.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/bin/Debug/netcoreapp2.2/005. quick_class.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/bin/Debug/netcoreapp2.2/005. quick_class.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/obj/Debug/netcoreapp2.2/005. quick_class.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/obj/Debug/netcoreapp2.2/005. quick_class.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/obj/Debug/netcoreapp2.2/005. quick_class.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/obj/Debug/netcoreapp2.2/005. quick_class.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/obj/Debug/netcoreapp2.2/005. quick_class.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/005. quick_class/obj/Debug/netcoreapp2.2/005. quick_class.pdb

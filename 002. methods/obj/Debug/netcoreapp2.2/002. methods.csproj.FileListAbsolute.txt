@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/bin/Debug/netcoreapp2.2/002. methods.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/bin/Debug/netcoreapp2.2/002. methods.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/bin/Debug/netcoreapp2.2/002. methods.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/bin/Debug/netcoreapp2.2/002. methods.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/bin/Debug/netcoreapp2.2/002. methods.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/obj/Debug/netcoreapp2.2/002. methods.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/obj/Debug/netcoreapp2.2/002. methods.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/obj/Debug/netcoreapp2.2/002. methods.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/obj/Debug/netcoreapp2.2/002. methods.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/obj/Debug/netcoreapp2.2/002. methods.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/002. methods/obj/Debug/netcoreapp2.2/002. methods.pdb
