@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/obj/Debug/netcoreapp2.2/009. logic_operations.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/obj/Debug/netcoreapp2.2/009. logic_operations.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/obj/Debug/netcoreapp2.2/009. logic_operations.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/obj/Debug/netcoreapp2.2/009. logic_operations.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/bin/Debug/netcoreapp2.2/009. logic_operations.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/bin/Debug/netcoreapp2.2/009. logic_operations.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/bin/Debug/netcoreapp2.2/009. logic_operations.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/bin/Debug/netcoreapp2.2/009. logic_operations.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/bin/Debug/netcoreapp2.2/009. logic_operations.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/obj/Debug/netcoreapp2.2/009. logic_operations.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/009. logic_operations/obj/Debug/netcoreapp2.2/009. logic_operations.pdb

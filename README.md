@@ -103,13 +103,52 @@ igual que(==), diferente de(!=), menor que(<), mayor que(>), menor o igual(<=), 
 a < b => nos compara si el valor de a es menor que el de b, si es cierto nos devuelve un true, si es falso nos devuelve false.
 
 
-# Operadores logicos
+# Operaciones logicos
+El tipo de resultado es boleano. y los operando tambien son de tipo boleano.
+
+Algunas operaciones logicas son: 
+
+1. Negacion (!)
+2. Conjucion (&&)
+3. Disyuncion inclusiva y exclusiva
 
 
 # Trabajando un poco con DateTime (fecha)
+Nos sirve para guardar fechas y horas.
+
+Para manejar aspectos de tiempo en nuestro programa, saber cuantos dias hay entre una fecha y otra, agregarle meses a una fecha, agregarle anos, hacer resta entre fechas y devolver la cantidade de dias, meses, anos, horas etc... que hay como resultado de la resta.
 
 
-# Alcance de variables y bloques
+# Bloques y alcance de variables
+
+1. Bloques
+Con bloques no referimos al codigo en el interior de dos llaves.
+
+{
+    ... codigo
+    ... codigo
+    ... mas codigo
+}
+
+2. Alcance
+Cuando hablamos de alcance nos referimos a desde donde podemos referirnos o invocar una variable o metodo.
+
+Si defino una variable en un metodo o ciclo, el alcance de esta se limita al bloque de dicho metodo o ciclo. O los bloques que esten dentro de el bloque de definicion.
+
+NOTA: si desea usar una varible global en un metodo estatico, debes definirla como static.
+
+Asi que podemos hacer 3 reglas:
+1. Toda variable declarada en un bloque, la puedo utilizazr dentro del mismo, o de algun bloque hijo.
+2. No puedes acceder a elementos definidos en bloques internos desde un bloque externo. Osea no puede acceder a una variable que ha sido definida en un bloque hijo, OJO: al reves si se puede.
+3. Solo podemos acceder a una propiedad o variable la cual tenga como modificador de acceso el atributo public.
+4. No puedes acceder a variables o propiedades definidas en bloques hermanos, osea, bloques definido dentro de la misma clase.
+
+En caso de las clases, tienes acceso a sus propiedades(variables) "publicas" por medio de la instancia de la clase.
+
+var instancia = new ClassName();
+instancia.nombrePropiedad = "lo que sea";
+
+Claro esta, en el caso de clase va a depender del modificador de acceso, ya que si es private no podras acceder a el desde otra clase que no sea la misma. Pero ya eso lo trataremos en el tema de modificadores de acceso.
 
 
 # Strings en C#
