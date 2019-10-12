@@ -171,6 +171,10 @@ Los siguientes son usados a las hora de validar datos, por ejemplo, poner todo m
 15. IsNullOrWhiteSpace() => nos retorna true si la cadena pasada como parametro es nula (null) o solo son espacios en blancos ("   ")
 16. IsNullOrEmpty() => nos retorna true si la cadena pasada como parametro es nula (null) o esta vacia ("")
 
+Estos no son todos los metodos de string, si necesitas alguna funcionalidad que estos no te dan, puedes consultar la documentacion de Microsoft, este es el enlace que te lleva al tema de los string:
+
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#immutability-of-string-objects
+
 # Condicional if
 
 
