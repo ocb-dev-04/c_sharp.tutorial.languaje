@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/bin/Debug/netcoreapp2.2/018. enums_and_magic_numbers.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/bin/Debug/netcoreapp2.2/018. enums_and_magic_numbers.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/bin/Debug/netcoreapp2.2/018. enums_and_magic_numbers.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/bin/Debug/netcoreapp2.2/018. enums_and_magic_numbers.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/bin/Debug/netcoreapp2.2/018. enums_and_magic_numbers.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/obj/Debug/netcoreapp2.2/018. enums_and_magic_numbers.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/obj/Debug/netcoreapp2.2/018. enums_and_magic_numbers.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/obj/Debug/netcoreapp2.2/018. enums_and_magic_numbers.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/obj/Debug/netcoreapp2.2/018. enums_and_magic_numbers.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/obj/Debug/netcoreapp2.2/018. enums_and_magic_numbers.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/018. enums_and_magic_numbers/obj/Debug/netcoreapp2.2/018. enums_and_magic_numbers.pdb

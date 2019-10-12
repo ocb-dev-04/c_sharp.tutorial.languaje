@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/bin/Debug/netcoreapp2.2/014. for_iterator.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/bin/Debug/netcoreapp2.2/014. for_iterator.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/bin/Debug/netcoreapp2.2/014. for_iterator.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/bin/Debug/netcoreapp2.2/014. for_iterator.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/bin/Debug/netcoreapp2.2/014. for_iterator.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/obj/Debug/netcoreapp2.2/014. for_iterator.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/obj/Debug/netcoreapp2.2/014. for_iterator.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/obj/Debug/netcoreapp2.2/014. for_iterator.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/obj/Debug/netcoreapp2.2/014. for_iterator.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/obj/Debug/netcoreapp2.2/014. for_iterator.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/014. for_iterator/obj/Debug/netcoreapp2.2/014. for_iterator.pdb

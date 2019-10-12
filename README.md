@@ -204,19 +204,115 @@ Si quires saber mas sobre el, aui esta el link a documentacion oficial.
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator
 
 # Ciclo for
+El ciclo for es por mucho uno de los ciclos mas usados en lo que al desarrollo se refiere. ya que te permite hacer una x operacion cantidades de veces previamente fijadas. Como se vio en el ejemplo de string, para mostrar un array.
 
+Podemos usarlo para recorrer o llenar arreglos, listas (aunque para las listas el bucle perfecto es el foreach), pero en fin, para todo que tenga que  ver con repetir algo una cantidad x de veces.
+
+for(valor_de_inicio; valor_final; valor_a_sumar)
+{
+    ... codigo
+    ... codigo
+    ... codigo
+}
 
 # Ciclo foreach
+El ciclo foreach es mas completo por asi decirlo, y como se menciono anteriormente es perfecto para las listas, podria decirse que es un ciclo for con esteroides.
 
+Su estructura es la siguiente:
 
-# Ciclo while
+foreach(tipo_de_dato nombre_que_tendra in nombre_de_la_lista)
+{
+    Console.WriteLine(nombre_que_tendra);
+}
 
+Ya en codigo seria asi:
+
+foreach(string name in names)
+{
+    Console.WriteLine(name);
+}
+
+OJO: el tipo de dato, debe coincidir con el tipo de dato de la lista, pues en si lo que hacemos es una clonacion momentanea de cada dato de la lista en este, asi que tiene que  ser el mismo o dara error.
+
+NOTA: Otra diferencia bastante importa es el hecho de que no puedes modificar el valor de la variable que defines para iterador (nombre_que_tendra), ya que es una variable del bucle en si.
+
+# Ciclo while y do while
+Son ciclos basados en repetir un bloque de codigo las veces que sea necesario hasta que sus condicionales se dejen de cumplir:
+
+1. while()
+Este ciclo se basa en repetir un bloque de codigo siempre y cuando la condicion que se le pasa como parametro sea verdadera, es muy usada a la hora de hacer menus en consola.
+Su principal diferencia con el ciclo do{ ... }while() es que el while() primero examina y luego hace.
+
+while(true)
+{
+    ... codigo
+    ... codigo
+}
+
+2. do{ ... }while()
+En escencia es lo mismo que el while, solo que lo usamos cuando queremos que se ejecute el bloque de codigo al menos una vez. En si, el do while primero ejecuta y luego compara.
+
+do{
+    ... codigo
+    ... codigo
+}while(true)
+
+Siempre recuerda, el do while() ejecuta el codigo al menos una vez, y luego compara a ver si la expresion es true, asi que ten cuidado, su mayor fortaleza tambien es su mayor debilidad.
+
+Aunque se puede hacer algo para que se salga del proceso por "x" o "y" razon, eso lo veremos en el proxima capitulo.
 
 # break y continue
+En si son sentencias de escapes. 
 
+1. break
+Lo utilizamos para detener la ejecucion de un proceso, no necesariamente el bucle while o do while,tambien sirve en el for.
+
+En palabras simples detiene de forma arbitraria un proceso ciclico, por ejemplo, si pides dos numero para mostrar de inicio a final, pero el usuario ingreso un numero final, extremedamente grande, puedes verificar si el numero ingresado es mayor que (500000) por ejemplo, haces el break. Y no ejecutas nada.
+
+2. continue
+Ignora el resto de codigo dentro del ciclo utilizado, asi que tecnicamente continue equivale a llegar al final del ciclo y vuelve a ejecutar la comparacion del inicio, pero obviamente vuelve a ejecutarse. De manera que al llegar al continue, el bucle vuelve a examinar la condicion.
+
+Lo podemos utilizar cunado en un ciclo necesitamos ignorar "x"  o "y" valor o resultado.
 
 # enums y "numeros magicos"
 
+1. enum
+Un tipo de enumeración proporciona una manera eficiente de definir un conjunto de constantes integrales con nombre que pueden asignarse a una variable. Por ejemplo, suponga que tiene que definir una variable cuyo valor representará un día de la semana. Solo hay siete valores significativos que esa variable almacenará alguna vez. Para definir esos valores, puede usar un tipo de enumeración, que se declara mediante la palabra clave enum .
+
+Estas enumeraciones de variables se pueden usar por ejemplo en estados de ejecucion.
+
+enum NombreDeLaColeccion {
+    nombre_identificador = numero_o_cadena_que_vale,
+    nombre_identificador = numero_o_cadena_que_vale,
+    nombre_identificador = numero_o_cadena_que_vale,
+};
+
+Ejemplo:
+
+enum OperationsStatus 
+{
+    Succesful = 1,
+    ClientNotFound = 2,
+    InternError = 5
+};
+
+Una ventaja de los enums es el hecho de que lo usas globalizado, de manera que si cambias un valor en el enum este valor cambiara en todos los lugares en donde lo invoques. Garantizando la integridad de tu codigo.
+
+Si necesitas mas informacion pues aqui te dejo un link:
+
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/enumeration-types
+
+2. numeros magicos
+En si es un anglosajismo, y llamamos numero magico a todo aquel numero "hardcodeado" que facilmente se te olvida su proposito.
+
+ejemplo:
+
+if(variable == 1)
+{
+    ... codigo
+}
+
+Quizas en el momento en el que hagas el codigo, te acuerdas que vale, pero unos meses despues, o una persona que no seas tu se le volvera un caos la cabeza para saber que es eso.
 
 # Strings "magicos"
 

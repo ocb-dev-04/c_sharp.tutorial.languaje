@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/obj/Debug/netcoreapp2.2/017. break_and_continue.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/obj/Debug/netcoreapp2.2/017. break_and_continue.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/obj/Debug/netcoreapp2.2/017. break_and_continue.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/obj/Debug/netcoreapp2.2/017. break_and_continue.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/bin/Debug/netcoreapp2.2/017. break_and_continue.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/bin/Debug/netcoreapp2.2/017. break_and_continue.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/bin/Debug/netcoreapp2.2/017. break_and_continue.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/bin/Debug/netcoreapp2.2/017. break_and_continue.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/bin/Debug/netcoreapp2.2/017. break_and_continue.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/obj/Debug/netcoreapp2.2/017. break_and_continue.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/017. break_and_continue/obj/Debug/netcoreapp2.2/017. break_and_continue.pdb

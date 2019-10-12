@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/obj/Debug/netcoreapp2.2/015. foreach_bucle.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/obj/Debug/netcoreapp2.2/015. foreach_bucle.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/obj/Debug/netcoreapp2.2/015. foreach_bucle.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/obj/Debug/netcoreapp2.2/015. foreach_bucle.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/bin/Debug/netcoreapp2.2/015. foreach_bucle.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/bin/Debug/netcoreapp2.2/015. foreach_bucle.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/bin/Debug/netcoreapp2.2/015. foreach_bucle.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/bin/Debug/netcoreapp2.2/015. foreach_bucle.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/bin/Debug/netcoreapp2.2/015. foreach_bucle.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/obj/Debug/netcoreapp2.2/015. foreach_bucle.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/015. foreach_bucle/obj/Debug/netcoreapp2.2/015. foreach_bucle.pdb

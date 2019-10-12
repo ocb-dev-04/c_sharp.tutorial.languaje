@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/bin/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/bin/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/bin/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/bin/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/bin/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/obj/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/obj/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/obj/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/obj/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/obj/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/016. while_and_doWhile_bucles/obj/Debug/netcoreapp2.2/016. while_and_doWhile_bucles.pdb
