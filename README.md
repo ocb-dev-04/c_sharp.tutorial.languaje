@@ -176,6 +176,28 @@ Estos no son todos los metodos de string, si necesitas alguna funcionalidad que 
 https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/
 
 # Condicional if
+Nos sirve para decidir que hacer con el resultado de comparaciones logicas.
+
+Otra definicion mas tecnica es, que nos permite ejecutar cierto bloque de codigo si se da una condicion establecida.
+
+si (esta lloviendo) entonces (llevas paraguas).
+
+Puedes usar mas de un condicional:
+
+if(){
+
+}
+else if(){
+
+}else{
+
+}
+
+En resumen, usaras la condicional if para tomar decisiones en base a una comparacion logica, validaciones y demas.
+
+Existe una forma corta de crear una expresion if, es esta:
+
+if() ? instruccion_si_es_verdadero : instruccion_si_es_falso;
 
 
 # Ciclo for
