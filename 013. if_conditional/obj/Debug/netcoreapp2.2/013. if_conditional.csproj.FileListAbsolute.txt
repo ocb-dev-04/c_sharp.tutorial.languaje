@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/bin/Debug/netcoreapp2.2/013. if_conditional.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/bin/Debug/netcoreapp2.2/013. if_conditional.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/bin/Debug/netcoreapp2.2/013. if_conditional.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/bin/Debug/netcoreapp2.2/013. if_conditional.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/bin/Debug/netcoreapp2.2/013. if_conditional.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/obj/Debug/netcoreapp2.2/013. if_conditional.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/obj/Debug/netcoreapp2.2/013. if_conditional.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/obj/Debug/netcoreapp2.2/013. if_conditional.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/obj/Debug/netcoreapp2.2/013. if_conditional.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/obj/Debug/netcoreapp2.2/013. if_conditional.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/013. if_conditional/obj/Debug/netcoreapp2.2/013. if_conditional.pdb
