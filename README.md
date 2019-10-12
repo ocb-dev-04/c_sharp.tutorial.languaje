@@ -1,7 +1,8 @@
 # c_sharp.tutorial.languaje
-Un tutprial de 0 a 100 sobre C#, en el marco de desarrollo de .Net Core 2.2
+Un tutprial de 0 a 100 sobre C#, en el marco de desarrollo de .Net Core 2.2 aunque es C# asi que dara igual si lo haces en .Net Core o .Net Framework
 
 # Introduccion
+
 
 
 # Variables
@@ -80,7 +81,6 @@ NOTA: en la definicion de variables podemos declararlas sin necesariamente inici
 
 var price; => esto daria error, pues no le estamos diciendo a c# que tipo adquirira esta variable.
 
-
 # Operadores
 Nos permiten realizar operaciones con las variables, principalmente tocaremos el tema de los operadores aritmeticos.
 
@@ -94,14 +94,12 @@ Tambien se uso para incremento y decremento:
 2. x-- => se decrementa uno a la variable
 3. a%b => da como resultado el residuo, osea: 15/2 = 7 y el residuo es 1, ese 1 es lo que devuelve esta operacion.
 
-
 # Operaciones de relacion
 Nos sirven apra comaprar dos valores. Su tipo de resultado es un boleano (true, false). Las operaciones de relacion mas comunes son:
 
 igual que(==), diferente de(!=), menor que(<), mayor que(>), menor o igual(<=), mayor o igual(>=), is (is string, is int, is bool, is double, etc...)
 
 a < b => nos compara si el valor de a es menor que el de b, si es cierto nos devuelve un true, si es falso nos devuelve false.
-
 
 # Operaciones logicos
 El tipo de resultado es boleano. y los operando tambien son de tipo boleano.
@@ -112,12 +110,10 @@ Algunas operaciones logicas son:
 2. Conjucion (&&)
 3. Disyuncion inclusiva y exclusiva
 
-
 # Trabajando un poco con DateTime (fecha)
 Nos sirve para guardar fechas y horas.
 
 Para manejar aspectos de tiempo en nuestro programa, saber cuantos dias hay entre una fecha y otra, agregarle meses a una fecha, agregarle anos, hacer resta entre fechas y devolver la cantidade de dias, meses, anos, horas etc... que hay como resultado de la resta.
-
 
 # Bloques y alcance de variables
 
@@ -149,7 +145,6 @@ var instancia = new ClassName();
 instancia.nombrePropiedad = "lo que sea";
 
 Claro esta, en el caso de clase va a depender del modificador de acceso, ya que si es private no podras acceder a el desde otra clase que no sea la misma. Pero ya eso lo trataremos en el tema de modificadores de acceso.
-
 
 # Strings en C#
 Las cadenas de textos em C# son un tipo de dato que usaras muy a menudo, asi que debes tener un bune manejo de ellas.
