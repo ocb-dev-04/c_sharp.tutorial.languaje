@@ -199,6 +199,9 @@ Existe una forma corta de crear una expresion if, es esta:
 
 if() ? instruccion_si_es_verdadero : instruccion_si_es_falso;
 
+Si quires saber mas sobre el, aui esta el link a documentacion oficial.
+
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator
 
 # Ciclo for
 
