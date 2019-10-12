@@ -315,10 +315,21 @@ if(variable == 1)
 Quizas en el momento en el que hagas el codigo, te acuerdas que vale, pero unos meses despues, o una persona que no seas tu se le volvera un caos la cabeza para saber que es eso.
 
 # Strings "magicos"
-
+Al igual que con los numeros magicos, se puede dar el caso con cadenas. Al igual que con los numeros se puede solucionar globalizando estos valores en un enum.
 
 # namespace y using
+Todo tu codigo no va a estar en un solo archivo, al ir creciendo utilizaras carpetas las cuales deberas ordenar tanto en orden de prioridad y poder como dentro de los archivos mismos. Para esto se usan los namespace y los using.
 
+Si creas un archivo extra en una carpeta de tu proyecto con la ruta:
+
+ruta_del_proyecto/NombreApp/UserMetodos
+
+para acceder a este desde el archivo c# debes usar el using e incluir el namespace, seria algo como esto:
+
+using System; // este siempre esta  por defecto
+using NombreApp.UserMetodos;
+
+En si es el uso basico, y obviamente mientras mas subcarpetas tengas mas largo sera el namespace.
 
 # Comentarios
 

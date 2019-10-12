@@ -1,0 +1,4 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/019. magic_strings/obj/Debug/netcoreapp2.2/019. magic_strings.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/019. magic_strings/obj/Debug/netcoreapp2.2/019. magic_strings.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/019. magic_strings/obj/Debug/netcoreapp2.2/019. magic_strings.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/019. magic_strings/obj/Debug/netcoreapp2.2/019. magic_strings.AssemblyInfo.cs
