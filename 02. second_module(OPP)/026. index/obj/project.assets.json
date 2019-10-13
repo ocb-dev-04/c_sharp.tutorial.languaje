@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/024. constructors/024. constructors.csproj",
-      "projectName": "024. constructors",
-      "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/024. constructors/024. constructors.csproj",
+      "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/026. index/026. index.csproj",
+      "projectName": "026. index",
+      "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/026. index/026. index.csproj",
       "packagesPath": "/home/oscar/.nuget/packages/",
-      "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/024. constructors/obj/",
+      "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/026. index/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

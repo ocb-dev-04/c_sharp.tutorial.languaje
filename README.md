@@ -439,13 +439,73 @@ si necesitas pasar un nullable a un metodo y recibe un tipo de dato no nullable,
 nombre_variable.Value => con la propiedad (Value) envia el valor en si de la variable no la variable como tal. Obviamente primero debes hacer una condicional para saber que la propiedad nullable tiene un valor.
 
 # Constructores
+Es el primer metodo que se ejecuta al instanciar una clase.
 
+Se usa principalmente para inicializar propiedades como asignar un valor a una propiedad antes de ser usada en un metodo, o hacer un request y almacenar el resultado para utilizarlo posteriormente.
+
+Se  pueden definir contructores a tu gusto, aceptando parametros distintos obviamente.
+
+Existe un shorcut para declaralos:
+
+1. Visual Studio (2015, 2017, 2019, etc..) => ctor luego pulsar Tab.
+2. VS Code => ctor y presionas Enter.
+
+Rara vez un constructor pasa de 5 linea de codigo.
 
 # Campos y propiedades
 
+1. Campo
+Es una varible definida en el bloque de una clase. Ose no defina en un metodo, ni en una estructura ni enum sino en la clase en si. Ejemplo:
+
+class NameClass
+{
+    private int varName; => esto es un campo
+
+    public void MethodName()
+    {
+        ... codigo
+    }
+}
+
+Por lo general los campos son de tipo privado, ya que gran parte de las veces almacenaran informacion delicada.
+
+2. Propiedades
+Son todas aquellas variables que son accesibles desde fuera de la clase. Por lo general son accesibles desde fuera mediante la instancia de la clase que la contiene.
+
+Nos permiten encapsular la logica de la lectura y escritura de las variables o campos de una clase.
+
+Su sintaxis es esta:
+
+public tipo_dato nombre_variable { get; set; }
+
+Existe un shortcut para escribirla de manera rapida que es: prop luego presionas Tab y te creara un template de esta manera:
+
+public int Properties { get; set; }
 
 # Indexadores
+Nos permite acceder al index "x" de una colecion en un campo de clase o propiedad en si.
 
+Los indexadores permiten que las instancias de una clase o estructura se indexen al igual que las matrices. El valor indexado se puede establecer o recuperar sin especificar explícitamente un tipo o miembro de instancia. Los indexadores se parecen a las propiedades, excepto que sus accesores toman parámetros.
+
+De manera que asi como accedemos a un valor de un campo por medio de una propiedad. La sintaxis es esta:
+
+public tipo_del_valor_a_devolver this[int index]
+{
+    get
+    {
+        return nombre_del_campo[index];
+    }
+    set
+    {
+        nombre_del_campo[index] = value;
+    }
+}
+
+OJO: El campo es mas que obvio que debe ser un coleccion.
+
+El tema es un poco extenso para entenderlo en su totalidad, asi que aqui te dejo un link a la documentacion oficial:
+
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/
 
 # Metodos
 
