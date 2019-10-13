@@ -20,6 +20,17 @@ El tipo de una variable puede ser entero, caracter, cadena, fecha, boolean (logi
 
 El identificador es el nombre de la variable.
 
+Se pude realizar el casteo de tipos o conversion de tipos, que no es mas que signarle un tipo a un dato antes de asignarlo a una variable de un tipo definido. Ejemplo:
+
+float fDays = 56.36;
+int day = fDays; // nos dara error asignarle un float a un int, pero
+int day = (int)fDays; // lo convertimos antes de asignarlo y listo o tambien podemos hacerlo de esta manera
+int day = Convert.ToInt32(fDays);
+
+Mas informacion sobre el casteo o conversion de tipo en este link:
+
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions
+
 # Methodos
 Los metodos son bloques de codigo que podemos ejecutar al invocarlos.
 
@@ -508,13 +519,77 @@ El tema es un poco extenso para entenderlo en su totalidad, asi que aqui te dejo
 https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/
 
 # Metodos
+Nos permite hacer un bloque de codigo asignarle un nombre que por lo general tiene que ver con la funcion que hacen, podemos pasarles parametros y retornar un tipo de valor.
 
+En parte nos permite ahorrar muchas lineas de codigo a la hora de hacer una accion determinadas cantidades de veces. Asi que usaras metodos tecnicamente para todo.
+
+Su sintaxis es esta:
+
+modificador_de_acceso tipo_de_retorno nombre_metodo(tipo_de_parametro nombre_local_del_parametro)
+{
+    ... codigo
+    ... codigo
+}
+
+Ejemplo:
+
+public int Sumar(int valor1, int valor2)
+{
+    return valor1 + valor2;
+}
+
+Obviamente puede ser private, static, o puede retornar un double o no retornar nada, o aceptar 5 parametros o ninguno.
 
 # Operaciones en las clases
+Podemos crear operaciones en nuestras clases en base a los operadores conocidos habitualmente.
 
+(+ - / *) => son los operadores mas conocidos
+(++, --) => puedes definir estos operadores en una clase para que al invocar la clase, por ejemplo le sume uno a cada parametro, vector o lo que sea, o restarle uno, o sumarle una cantidad especifica, etc... 
+
+La sintaxis es muy simple:
+
+public static valor_retorno operador operador_a_usar(parametros)
+{
+    ... codigo
+    ... codigo
+}
+
+Seria asi:
+
+public static int operador ++(int numero)
+{
+    return numero++; 
+    (o podrias retornar)
+    return numero + un_valor_especificado;
+}
 
 # Struct
+Una estructura (struct) es un tipo de "valor" que podemos definir. No te confundas con las clases ya que las clases es un tipo de "referencia" que podemos definir.
 
+Tecnicamente puedes poer todo lo de una clase en una estrutura:
+
+1. Campos
+2. Propiedades
+3. Indexadores
+4. Constructores
+5. Metodos
+
+Entonces cual es su diferencia o cuando debemos usar una clase y cuando una estructura:
+
+* Una estructura la vamos a usar cunado nuestras instancias tenga un tiempo de vida corto, tenga pocos datos, no tenemos necesidad de "castear" mucho y que sus funcionalidades sean pequenas.
+
+(Castear) => se refiera a la practica de cambiar el tipo de valor de forma implicita o explicita. Sucede cunado por ejemplo haces la suma de int y un double el double es mas grande en memoria, de manera que el rersultado se castea a double. O cuando delante de la variable ponemos (double) o (string) o (int). Eso ya lo consideramos en el primer tema de las variables y tipos.
+
+Este tema es simple pero algo delicado aqui te dejo un link con todo y ejemplos para que entiendas bien:
+
+https://social.msdn.microsoft.com/Forums/es-ES/e44f9b6e-760a-4fc1-b5fa-afd675e9e002/explicacion-castear?forum=dcees
+
+Ejemplo:
+Instanciamos una estructura usamos un metodo u obtenemos un valor y ya.
+
+* Una clase la vamos a usar cuando debemos modelar comportamietnos y datos mas complejos que se pretenden modifciar despues de crear un objeto de la clase.
+
+En resumen, para cosas sencilla struct, para cosas grandes, complicadas y requira seguridad deberas usar clases.
 
 # Sobrecarga de metodos
 

@@ -36,6 +36,11 @@ namespace var_declare_and_initilize
 
             Console.WriteLine($"{firstName} {lastName} life in {direcction}");
 
+            // tambien existe el casteo de tipos, no es mas que cambiar el tipo de dato o convertirlo mejor dicho
+            days = (int)56.36;// days es de tipo entero y el valor asignado es de tipo float, pero al poner el (int) lo casteo o lo convierto en int
+            days = Convert.ToInt32(56.36);// esta es otra manera de convertirlo
+            // algo a resaltar es el hecho de que puedes usar el casteo con (string)(double) etc...
+            
             Console.ReadKey();
         }
     }
