@@ -6,6 +6,8 @@ namespace _004._data_types
     {
         static void Main(string[] args)
         {
+
+            // obviamente los valores que le asigno son un ejemplo, no es que se peuda hacer esa asignacion
             #region Enteros con signo
 
             // tamano de 8 bits

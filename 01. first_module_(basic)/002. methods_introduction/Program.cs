@@ -27,7 +27,7 @@ namespace _002._methods
         }
 
         // method with more params
-        static void IdentificateMethodName(string value1, int value2, bool value3)
+        static void IdentityMethodName(string value1, int value2, bool value3)
         {
             Console.WriteLine(value1);
             Console.WriteLine(value2);
