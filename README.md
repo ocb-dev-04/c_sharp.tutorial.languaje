@@ -332,9 +332,108 @@ using NombreApp.UserMetodos;
 En si es el uso basico, y obviamente mientras mas subcarpetas tengas mas largo sera el namespace.
 
 # Comentarios
+Son utilizados para documnetar el codigo, osea:
+Que hace ese codigo que le sigue? de esta manera tu mismo timepo despues o alguien mas que vaya a mantener tu codigo, sabe que hacer en caso de error o refactorizacion
 
+NOTA: aunque el objetivo de los comentarios es hacer el codigo mas entendible. ES TOTALMENTE INNECESARIO COMENTAR CODIGO QUE SEA MAS QUE OBVIO SU COMPORTAMIENTO POR EJEMPLO:
+
+*UN IF QUE COMPARE DOS VARIABLES
+*UN CICLO FOR QUE LLENE O VACIE UN ARREGLO
+*UN FOREACH QUE MUESTRE UNA LISTA, ETC
+
+Es mas comun usarlos en:
+
+1. Consultas a base de datos (ORM), ya que puedes hacer consultas muy complejas con el uso de EF y LINQ.
+2. Al recorrer arreglos multidimensionales.
+3. En todo codigo con complejidad cuestionable.
+
+En resumen, has comentarios utiles.
+
+Tip:
+Si quieres hacer un comentario rapido hay combinacion de teclas:
+
+Visual Studio 2015, 2017, 2019 => (Ctrl K + C)
+Visual Studio Code =>  (Ctrl + /)
+
+Otro tipo de comentario es para las clases y metodos que hacemos, por lo general al usar una clase o metodo nos muestra las opcioens de clases y metodos publicos que tenemos, pero podemos agregar una descripcion que nos muestre al acceder a ella.
+
+///<sumary>
+/// Description breve de la clase
+///</sumary>
+
+Este pues es opcion, pero sirve de mucho a la hora de invocar las clases.
+
+RECUERDA: a veces mas que explica el que, es mejor explicar el porque de las cosas (propiedades, clases, metodos) en tus comentarios.
 
 # try/catch
+En algun momento nuestro programa dara un error, de manera que necesitaremos una directiva para preever que esos errores hagan crashear nuestra app. Para esto existe try/catch.
 
+En si lo usamos cuando las probabilidades de error sean altas:
+
+1. Al conectar con una base de datos
+2. Al hacer un httpRequest a una api
+3. Al hacer un query a una base de datos
+4. Si sospechamos que el usuario puede ingresar un dato invalido
+
+Algo a resaltar es el hecho de que puedes especificar el catch que deseas ejecutar, los cuales pueden ser dependiendo de la operacion realizada, y puedes combinar catch demanera que puedes incluir dosx tres, cuatro, aunque cuidado, tampoco llenes tu codigo de catch, con poner el catch correspondiente a la excepcion esperada y un cath por defecto es mas que suficiente:
+
+1. IndexOutOfRangeException
+2. DivideByZeroException
+3. Exception (por defecto), entre otras...
+
+Y solo se ejecutara el cath que cumpla con la exception creada o el por defecto.
+
+Hay otra instruccion que es parte del try{}catch() y es el finally{}el cual se de la excecion o no se de, siempre se va a ejecutar el codigo que esta alli. Nos puede servir para liberar recursos, alguna instancia, conecion a base de datos etc...
+
+Su sintaxis es:
+
+try{
+    ... codigo que puede dar algun error
+}catch(Exception ex)
+{
+    ... codigo para ejecutar en caso de que suceda un error o excepcion
+}finally
+{
+    ... codigo que se ejecutara de todas formas
+}
+
+Ejemplo: 
+
+Dividir un numero entre 0.
+
+try{
+    int div = 4 / 0;
+}catch(Exception ex)
+{
+    Console.Write("Error, no se puede dividir entre 0");
+}finally
+{
+    Console.Write("Esto se muestra obligatoriamente");
+}
+
+Obviamente el mensaje de error es enviado en base al error dado, en este caso por la division entre cero.
+
+Asi que ya sabes, el try{}catch() es para correr codigo que posiblemente de error.
+
+OJO, OJO, OJO: => Sino tinees idea de que excepcion puede lanzar tu codigo, siempre coloca el exception por defecto detras del exception que crees que puede ejecutarse.
 
 # Nullables
+Nos permiten darle por defecto un null a cualquier tipo de valor, o declara una varibale de tipo "x" que a la hora de asignarle valor puede ser null.
+
+Tiene una sintaxis larga u otra corta:
+
+1. Nullable<tipo_de_dato> nombre_variable; => se especifica explicitamente con el Nullable
+2. tipo_de_dato? nombre_variable; => se le agrega un signo de (?) para indicar que puede ser nulo.
+
+Si declaraste un nullable y quieres saber si tiene valor usa la propiedad HasValue:
+
+nombre_variable.HasValue => si tiene valor retorna true
+
+NOTA: un tipo de dato con nullable no es lo mismo que el mismo tipo de dato sin el nullable.
+
+DateTime? != Datetime
+int? != int
+
+si necesitas pasar un nullable a un metodo y recibe un tipo de dato no nullable, debes pasarlo de esta manera:
+
+nombre_variable.Value => con la propiedad (Value) envia el valor en si de la variable no la variable como tal. Obviamente primero debes hacer una condicional para saber que la propiedad nullable tiene un valor.

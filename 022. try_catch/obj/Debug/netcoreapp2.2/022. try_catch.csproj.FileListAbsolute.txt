@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/obj/Debug/netcoreapp2.2/022. try_catch.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/obj/Debug/netcoreapp2.2/022. try_catch.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/obj/Debug/netcoreapp2.2/022. try_catch.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/obj/Debug/netcoreapp2.2/022. try_catch.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/bin/Debug/netcoreapp2.2/022. try_catch.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/bin/Debug/netcoreapp2.2/022. try_catch.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/bin/Debug/netcoreapp2.2/022. try_catch.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/bin/Debug/netcoreapp2.2/022. try_catch.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/bin/Debug/netcoreapp2.2/022. try_catch.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/obj/Debug/netcoreapp2.2/022. try_catch.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/022. try_catch/obj/Debug/netcoreapp2.2/022. try_catch.pdb
