@@ -437,3 +437,85 @@ int? != int
 si necesitas pasar un nullable a un metodo y recibe un tipo de dato no nullable, debes pasarlo de esta manera:
 
 nombre_variable.Value => con la propiedad (Value) envia el valor en si de la variable no la variable como tal. Obviamente primero debes hacer una condicional para saber que la propiedad nullable tiene un valor.
+
+# Constructores
+
+
+# Campos y propiedades
+
+
+# Indexadores
+
+
+# Metodos
+
+
+# Operaciones en las clases
+
+
+# Struct
+
+
+# Sobrecarga de metodos
+
+
+# Params
+
+
+# Argumentos opcionales
+
+
+# Objetos y contextos
+
+
+# Metodos de extencion
+
+
+# Clases y miembros estaticos
+
+
+# Encapsulamiento
+
+
+# Herencia
+
+
+# Polimorfismo
+
+
+# Modificadores de acceso
+
+
+# Interfaces
+
+
+# Objeto Object y objeto IS
+
+
+# Pragmatismo
+
+
+# Inyeccion de dependencias
+
+
+# Factoria de clases
+
+
+# Tipos anonimos y dynamic
+
+
+# Clases abstracta
+
+
+# Metodos genericos
+
+
+# Readonly vs Const
+
+
+# Ref vs Out
+
+
+# Introduccion a los genericos
+
+
