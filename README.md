@@ -592,19 +592,95 @@ Instanciamos una estructura usamos un metodo u obtenemos un valor y ya.
 En resumen, para cosas sencilla struct, para cosas grandes, complicadas y requira seguridad deberas usar clases.
 
 # Sobrecarga de metodos
+A veces necesitamos hacer una accion del mismo nombre pero con diferente numeros de parametros o con parametros iguales pero de distintos tipos. Para esto usamos la sobrecarga de metodos.
 
+Para usar sobrecarga deben cumplirse algunos requisitos:
+
+1. Hacer la misma funcionabilidad
+2. Que los parametros no sean la misma cantidad
+3. En caso de que sea la misma cantidad deben ser de tipos distinto
+
+NOTA: No puede crear un metodo que retorne int y otro que retorna double con la misma cantidad de parametros y tipos, ya que C# no inferira en cuando llamas a cada uno, dara error.
 
 # Params
+Nos facilita la tarea de pasar parametros a los metodos, sea con sobrecarga o sin ella. En si nos permite pasar un sin numeros de parametros a nuestros metodos sin estar anteriormente definidos, OJO: los parametros enviados tienen que ser del mismo tipo ya que en si lo que hace params es un arreglo de parametros (hace que los parametros se acumulen en un array y obviamnete tienen todas las propiedades de un array => length, etc...)
 
+private int Calcular(params int[] numeros)
+{
+    ... codigo
+    ... codigo
+}
 
-# Argumentos opcionales
+private double Calcular(params double[] numeros)
+{
+    ... codigo
+    ... codigo
+}
 
+Pero tampoco abuses de su uso, recuerda que n el desarrollo mientras mas especifico mejor.
+
+# Argumentos opcionales o valores por defecto
+Al crear un metodo y definir dos valores de entrada, podemos hacer que esos valores tenga un valor por defecto, en caso de que al invocarlo solo se envie algunos de los valores necesitados. Lo hacemos de manera muy simple:
+
+private void NombreMetodo(string name, int age = 18)
+{
+    ... codigo
+    ... codigo
+}
+
+En esta definicion decimos que recibimos dos valores un string y un int, y que en caso de que al invocar el metodo no se ingrese el int pues tomara por defecto el valor de 18. Simple, facil, sin perdedera.
+
+OJO: Los valores por defecto te pueden ocasionar problemas principalmente si el metodo que lo implenta esta en un asembly, dll distinta de la que estas trabajando. Es tanto el caso de que si agregas un valor por defecto a un metodo debes recompilar todos los proyectos de la solucion, en caso de que sean mas de uno, visual studio tiene la opcion de hacer un "rebuild", es recomendable hacer el rebuild cuando se hacen cambios importantes y a la hora de agregar un nuget.
+
+NOTA IMPORTANTE: Si vas a usar una dll para hacer referencia a ella desde un proyecto "x" de manera que los metodos deberas ponerlos "public" asi no te recomiendo usar valores por defecto, mejor usa sobrecarga de metodos.
 
 # Objetos y contextos
+Algo que debe quedar claro es que el valor que se asigna en una instancia es unico, osea lo que hago con:
 
+var ni = new NombreClase();
+var oi = new NombreClase();
+
+Sin importa lo que pase, el valor y contexto de la instancia ni sera diferente de la instancia oi.
+
+la palabra reservad "this" indica que estamo trabajando con miembros de la clase en el contexto que estamos.
 
 # Metodos de extencion
+Nos permite agregarle acciones o funcionabilidades a una estructura ya creada la cual no controlamos.
 
+Por ejemplo si quieres agregar una funcionabilidad a un tipo especifico de valor (int, double, string, bool).
+
+La clase debe ser static y el metodo por ende tambien debe ser static, su sintaxis es mas o menos esta:
+
+public static class NombreDeLaExtencion
+{
+    public static double NombreDeLaFuncion(this int value, int exponente)
+    {
+        ... codigo
+        ... codigo
+    }
+}
+
+Explico:
+
+1. Es recomendable que el nombre de la extencion comience cono el tipo de dato que manejara, ejemplo:
+
+int => IntegerExtencionMethod
+doube => DoubleExtencionMethod
+string => StringExtencionMethod, y asi por el estilo
+
+2. El metodo en si, debe retornar algun valor, y se especifica el tipo de valor como siempre se hace => public static tipo_de_valor NombreMetodo().
+3. El nombre del metodo procura que sea bien descriptivo.
+4. El primer parametro que le precede la palabra this y luego el tipo, es la refencia que le damos a C# de hacia que tipo de valor esta orientada esa extencion. Y pues, en si representa el valor en si al cual estamos invocando ese metodo.
+
+int => this int value: el value puede ser cualquier otro nombre
+double => this double value
+string => this string value
+
+Y luego de esto, los parametros, si son necesarios.
+
+Al guardar y manejear datos del tipo que hiciste la extencion ya debe aparecer el metodo que acabas de crear como extencion.
+
+NOTA: Para usar la extencion en el tipo creado, debe estar definido como tal, no acepta la conversion explicita ni implicita asi que debes definir la variable del  tipo corrrecto para invocar la extencion previamente hecha.
 
 # Clases y miembros estaticos
 
