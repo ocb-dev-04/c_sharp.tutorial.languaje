@@ -683,10 +683,32 @@ Al guardar y manejear datos del tipo que hiciste la extencion ya debe aparecer e
 NOTA: Para usar la extencion en el tipo creado, debe estar definido como tal, no acepta la conversion explicita ni implicita asi que debes definir la variable del  tipo corrrecto para invocar la extencion previamente hecha.
 
 # Clases y miembros estaticos
+Son clases que no son instanciadas, osea no tienes que crear un objeto de referencia. Por tanto al no tener instancias no tienen datos separados (como sabemos las instancias guardan datos diferentes segun la instacia invocada), en el caso de las static no.
 
+Son especialmente utiles cuando:
+
+1. Necesitamos metodos que retornen un valor en base a parametros que no se necesite mantener en memoria (osea envio retorna y ya).
+2. Necesitamos procesos que no se mantengan en memoria.
+
+Para acceder a los campos, propiedades, metodos de una clase static no debemos instanciarla como bien dijimos, incluimos el using, y solo escribimos el nombre de la clase mas el punto y se mostrara la lista de propiedades y metodos que hallas creado en ella. La sintaxis seria esta:
+
+NombreClaseStatic.NombreMetodo(parametros_si_los_necesita);
+
+Si retorna algun valor pues se le asigna a una variable del tipo de retorno y listo.
+
+Algunos de los inconvenientes es que las clases estaticas solo se comunican con metodos estaticos. Para acceder de manera indirecta debemos instanciar la clase padre en la que estamos y accedemos a ese metodo por via de dicha clase.
+
+OJO: Una clase estatica no puede tener metodos de otro tipo que no sean estaticos, pero una clase normal por asi decirlo, si puede tener metodos estaticos. Para acceder a los metodos estaticos no hay que instanciar la clase, osea para acceder a los metodos estaticos sea la clase estatica o no, accdesmo a ellos directamente con el nombre de la clase.
 
 # Encapsulamiento
+Consiste en esconder los detalles de la implementacion de un tipo.
 
+En palabras mas simples, mantener oculto todas las variables y procesos que se llevan a cabo en una clase.
+
+Por ejemplo a la hora de acceder a los campos es bueno utilizar propiedades las cuales por medio de get (acceder) y set(asignar) pueden manejar la data de los campos pero no invocarlos en si.
+De esta manera puedes incluso agregar algunas condicionales en caso de que el valor sea null, y asi por el estilo.
+
+Como extra inicializa los campos con valores por defecto, de esa manera en caso de que no se le asigne nada, puede no mostrar nada pero sin errores.
 
 # Herencia
 
