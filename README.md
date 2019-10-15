@@ -807,17 +807,88 @@ Para que no te confundas:
 
 * En el caso de la herencia de interfaces, C# esta seguro de que todos cuentan con los metodos porque el contrato asi lo estipula, osea, me heredas me aplicas, asi de simple.
 
-# Objeto Object y objeto IS
+# Objeto Object y objeto is
+1. Object => puede definirse como el padre de todo, ose:
 
+true es un Object, string es un Object, int es un Object, de manera que si definimos un Object podemos asignarle el valor de tipo que seaa, (pero al hacer esto perdemos el acceso a las propiedades especificas de cada tipo), por lo que si defines una cadena de tipo Object no tendras acceso a la propiedad Lenght por ejemplo.
+
+Se escribe asi:
+
+Object nombreVariable = "Hola soy una cadena";
+nombreVariable = true;
+nombreVariable = 45.678890;
+
+En fin le puedes asignar lo que se te de la gana.
+
+2. is => es un "operador" para identificar el tipo. Se usa por lo general es condicionales, ejemplo:
+
+if(nombre_variable is string)
+{
+    .. codigo en caso de que sea string
+}
+if(nombre_variable is int)
+{
+    ... codigo en caso de que sea int
+}
+
+Y asi por el estilo con (is bool, is double, is DateTime, etc...).
 
 # Pragmatismo
+Es una actitud que valora la utilidad y el valor practico de las cosas. De manera que cada vez que hagas algo en el desarrollo debes hacerlo porque aporta valor al software no porque sencillamente te dijeron que lo hagas.
 
+Ejemplo:
+
+Un patron de diseno (que no es mas que una solucion reutilizable para un problema recurrente en un contexto determinado) no siempre aporta algo a tu software asi que ten cuidado. Incluso a veces tendras que ir en contra de los mismisimos principios de la creacion de software, ya que no son leyes constante como las de la fisica (gravedad, velocidad de ela luz, etc...).
+
+Asi que a la hora de desarrollar debes dar tres pasos:
+
+1. Analizar y pensar cual es tu problema.
+2. Ver las opciones que tienes para resolverlo.
+3. Escojer la solucion que mas te convenga segun tu caso.
+
+Con esto no digo que no aprendas patrones de diseno, para nada, pues estos te dan una perspectiva de como ver las cosas. Pero no son la solucion a todo, tenlo pendiente. Te preguntaras porque te digo esto y... 
+
+Es que hay desarrolladores que lo unico que tienen en su caja de herramientas es un destornillador, de manera que creen que todo problema en la vida es un tornillo, y no es asi.
+
+EN RESUMEN:
+
+HAS LAS COSAS QUE TE APORTEN, NO HAGAS LAS COSAS PORQUE SI, PIENSA, ANALIZA, RESULEVE Y ESCOGE SEGUN TU PROBLEMA (SI ES POSIBLE INFORMATE SOBRE CASOS PARECIDOS AL TUYO Y ASI TIENES UNA VISION GENERAL DE LAS COSAS).
 
 # Inyeccion de dependencias
+Es un patrón de diseño orientado a objetos, en el que se suministran objetos a una clase en lugar de ser la propia clase la que cree dichos objetos. Esos objetos cumplen contratos que necesitan nuestras clases para poder funcionar (de ahí el concepto de dependencia). Nuestras clases no crean los objetos que necesitan,sino que se los suministra otra clase 'contenedora' que inyectará la implementación deseada a nuestro contrato.
 
+En si es pasar una insancia de una interface como parametro, de manera que podemos enviar cualquier clase que herede y por tanto aplique los metodos de la interface en ella. .Librandonos de la tediosa tarea de definir un metodo en caso de una clase especifica, ya que solo pedimos interface, C# verifica si ese metodo la aplica y ya.
+
+De manera que si tenemos el siguiente metodo:
+
+void NombreMetodo(INombreInterface inter);
+
+Podemos pasarle como parametro cualquier clase que implemente esa interface, ya que por el contrato, la clase se ve obligada a definir cada metodo que posee dicha interface, de esta manera al acceder por ejemplo, al metodo GetAll de la interface, C# sabe que la clase que se envio posee ese metodo.
 
 # Factoria de clases
+En si la usamos para crear instancias de clases sin que el cliente lo sepa, osea, por lo general instanciamos asi:
 
+var obj = new NombreClase();
+
+En este caso, el nombre de la clase es explicito, es visible, pero queremos hacerlo mas  privado, entonces, creamos una factoria, por lo general se crea una clase aparte definimos un metodo que toma como parametro un string o un entero, dependdiendo de como quieras crear las clases (si es con un enum mucho mejor), y en base al valor del parametro, este por medio de condicionales o switch() te retornara una instancia de la clase especificada para dicho parametro.
+
+Obviamente el metodo que usaremos como factoria, retorna un tipo INombreInterfaz pero ojo, todas las instancia que seran creadas deben implementar esa interfaz. Pues de otra manera te dara error.
+
+Ejemplo:
+
+public INombreInterface ClassFactory(string cmd)
+{
+    if(cmd.Equals("enviar_mensaje"))
+    {
+        return new EnviarMensaje();
+    }
+    if(cmd.Equals("enviar_correo"))
+    {
+        return new EnviarCorreo();
+    }
+}
+
+Y es mas que obvio que el main method llamara la clase que tiene este metodo, no las clases que se instancian.
 
 # Tipos anonimos y dynamic
 
