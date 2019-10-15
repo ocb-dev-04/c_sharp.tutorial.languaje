@@ -711,16 +711,101 @@ De esta manera puedes incluso agregar algunas condicionales en caso de que el va
 Como extra inicializa los campos con valores por defecto, de esa manera en caso de que no se le asigne nada, puede no mostrar nada pero sin errores.
 
 # Herencia
+Es utilizar metodos y propiedades publicas o protegidas (las privadas no) para usar el codigo mas eficientemente, pero antes de que te vuelvas loco entendiendo esto dejame explicarte algunos conceptos.
 
+1. Clase padre => es la clase de la cual se derivan las demas.
+2. Clase derivada => son las clases hijo de la clase padre.
+
+OJO: las clases padre es tu papa o tu mama, la clase derivada eres tu, de la misma manera en la que si tus padres mueren heredas dinero, casa auto o algo, al tomar herencia en las clases heredas metodos, propiedades etc.. Esto es solo una ilustracion para que entiendas mejor.
+
+Consejos:
+
+Ala hora de crear una clase padre, toma en cuenta esto:
+
+1. Debe tener todas las propiedades comunes de las clases derivadas. Ejemplo:
+
+Vaca { nombre, patas, peso, color, tipo_de_cola }
+Perro { nombre, patas, peso, color, tipo_de_cola }
+
+Si te fijas tienen propiedades en comun, en este caso todas, pero eso es solo porque no he pensado en mas propiedades, el punto es que la clase padrea animal toma todas las propiedades comunes de las derivadas asi que seria de esta manera:
+
+Animal { nombre, patas, peso, color, tipo_de_cola }
+Vaca {  }
+Perro {  }
+
+Como ya dije todas las que tenian eran comunes, pero obviamente se quedaran con las propiedades que sean unica y exclusivamente de ellas.
+
+2. Al igual que con las propiedades tambien debe tener los metodos comunes, solo que con la palabra reservada (virtual) para que posteriormente en la clase hijo se use el (override) para modificar el comportamiento de dicho metodo. El ejemplo de esto lo veras en el codigo.
 
 # Polimorfismo
+Nos permite pasarle a un metodo un tipo el cual puede exponeer varios miembros, como por ejemplo pasarle clases hijos como parametros cuando en realidad espera clase padre, aparte del hecho de que a la hora de instanciarlo, se puede definir como un tipo y pasarle una cllase hijo como valor, osea:
 
+ClassA clsB = new ClasB();
+
+Obviamente ClassB() es hija de ClassA(), por eso podemos declararlo como parte de ella, de lo contrario daria error.
+
+De igual manera podemos pasarle como parametro la clase hija, siempre y cuando el tipo sea de la clase padre.
+
+NombreMetodo(ClassA clsA);
+le pasamos como parametro la clase hija:
+NombreMetodo(clsB);
+
+Porque sucede esto?
+
+Porque al ser hijos de la clase padre, C# esta completamente seguro de que van a implementar el metodo llamado por parte del padre, ya que lo heredan de el.
+
+A esto llamamos polimorfismo por herencia.
+
+Existe otra polimosfismo que es el que usamos con interfaces, ese lo veremos mas adelante.
 
 # Modificadores de acceso
+Nos permiten definir el tipo de accesibilidad de un tipo o de un miembre (propiedad, metodo, etc...).
 
+Son los siguientes:
+
+1. public => todos los que tengan acceso a las clase/estructura en donde esta definido puede utilizarlo.
+2. protected => solo aquellas clase que herede de dicha clase puede utilizarlo, (de mas esta decir que la misma clase en si puede usarlo). OJO:  puedes usarlo en la clase que hereda pero al instanciar la clase hijo no tienes acceso, osea no se hereda para instancias solo para uso dentro de la clase.
+3. private => solo puede usarlo la clase en donde se define.
+4. internal => limita el uso de una clase, estructura, metodo y/o propiedad a un proyecto en si, osea no tenemos acceso a la propiedad por medio de referencia ni nada por el estilo. En palabras mas simples, internal es como un public, pero solo para los archivos que se encuentran en el mismo proyecto.
+
+Ejemplo:
+
+*****************
+
+Tu padre puede prestarle una planta, un pico, una pala a un vecino. Entonces esto es de tipo public.
+
+De tu padre puedes heredar el auto, la casa, porque eres hijo en si de el. De manera que estas cosas son protected, solo los puedes heredar tu.
+
+No puedes heredar tu madre, es solo de tu padre, de modo que tu madre es private.
+
+No puedes darle la llave de la casa a nadie mas que no sea alguien de tu familia, por tanto las llaves de la casa son de tipo internal.
+
+*****************
+
+Son algunas ilustraciones al raras pero espero que te hallan funcionado.
 
 # Interfaces
+Es un contrato el cual obliga a la clase que la hereda a definir todos los metodos que se encuentran en ella.
 
+Al igual que con las clases padre e hijos, C# asegura que toda clase que herede una interfaz define cada uno de los metodos que esta posee, por tanto podemos pasarle un tipo de la clase que tenemos cuando se pide un tipo de la interface que heredamos.
+
+public void NombreMetodo(INombreInterface inter);
+
+Podemos hacerle esto:
+
+var obj  = new NewClass();
+
+NombreMetodo(obj);
+
+Podemos hacer esto siempre  y cuando NewClass herede y por tanto implemente los metodos que estan en INombreInterface.
+
+Asi que tambien aprovechamos polimorfismo con las interfaces.
+
+Para que no te confundas:
+
+* En el caso de la herencia de clases, C# esta seguro de que todos cuentan con los metodos sea porque utilizan el override para redefinirlos, o porque aplican el virtual por defecto.
+
+* En el caso de la herencia de interfaces, C# esta seguro de que todos cuentan con los metodos porque el contrato asi lo estipula, osea, me heredas me aplicas, asi de simple.
 
 # Objeto Object y objeto IS
 
