@@ -6,6 +6,8 @@ C# es un lenguaje de programación multiparadigma desarrollado y estandarizado p
 
 Su sintaxis básica deriva de C/C++ y utiliza el modelo de objetos de la plataforma .NET, similar al de Java, aunque incluye mejoras derivadas de otros lenguajes.
 
+# PRIMER MODULO
+
 # Variables
 Se usan para guardar informacion y ser usada posteriormente.
 
@@ -449,6 +451,8 @@ si necesitas pasar un nullable a un metodo y recibe un tipo de dato no nullable,
 
 nombre_variable.Value => con la propiedad (Value) envia el valor en si de la variable no la variable como tal. Obviamente primero debes hacer una condicional para saber que la propiedad nullable tiene un valor.
 
+# SEGUNDO MODULO
+
 # Constructores
 Es el primer metodo que se ejecuta al instanciar una clase.
 
@@ -737,6 +741,25 @@ Como ya dije todas las que tenian eran comunes, pero obviamente se quedaran con 
 
 2. Al igual que con las propiedades tambien debe tener los metodos comunes, solo que con la palabra reservada (virtual) para que posteriormente en la clase hijo se use el (override) para modificar el comportamiento de dicho metodo. El ejemplo de esto lo veras en el codigo.
 
+Algo que debes saber que de hecho es obvio, es que la herencia puede pasarse de una clase a otra osea:
+
+class Animal
+{
+    ... codigo
+}
+
+class Perro : Animal
+{
+    ... codigo
+}
+
+class Doberman : Perro
+{
+    ... codigo
+}
+
+Perro hereda de Animal y Doberman hereda de perro y asi sucesivamente.
+
 # Polimorfismo
 Nos permite pasarle a un metodo un tipo el cual puede exponeer varios miembros, como por ejemplo pasarle clases hijos como parametros cuando en realidad espera clase padre, aparte del hecho de que a la hora de instanciarlo, se puede definir como un tipo y pasarle una cllase hijo como valor, osea:
 
@@ -972,4 +995,82 @@ Usamos "out" => hace lo mismo que ref, solo que no require que la variable que s
 En resumen, out te obliga a asignarle un valor, pero ref no. Y ya.
 
 # Introduccion a los genericos
+Los genéricos introducen en .NET el concepto de parámetros de tipo,lo que le permite diseñar clases y métodos que aplazan la especificación de uno o varios tipos hasta que el código de cliente declare y cree una instancia de la clase o el método. Por ejemplo, al usar un parámetro de tipo genérico T puede escribir una clase única que otro código de cliente puede usar sin incurrir en el costo o riesgo de conversiones en tiempo de ejecución u operaciones de conversión boxing.
 
+En pocas palabras puedes hacer metodos clases que tomen como parametro cualquier tipo.
+
+Este tema es algo extenso si quieres mas ejemplos entra en este link:
+
+https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/generics/
+
+# Clases selladas
+Son clases que no pueden ser heredadas. Asi de simple, asi de sencillo.
+
+Te preguntaras, para que quiero una clase que no puede ser heredada?
+
+Pues imagina que creas la clase Animal,luego Perro hereda de ella y luego Doberman hereda de perro, despues de doberman no hay mas nada, de manera que doberman puede ser sellada.
+
+# Ejemplo de clases genericas
+Puedes declarar una clase generica de esta manera no estas atado a solo pasar "x" tipo como parametro a ella.
+
+Te sirve de mucho para ahorrar codigo.
+
+No solo puedes determinar un solo tipo de generico osea
+
+class NombreClase<T>
+{
+    ... codigo
+}
+
+Al instanciar esta clase debo pasarle algun tipo para que ocupe el generico T:
+
+var genIns = new NombreClass<int>(); => en este caso el generico seria un tipo int.
+
+Sino que tambien puedes definir mas de un generico:
+
+class NombreClass<T, I>
+{
+    ... codigo
+}
+
+Al instanciar esta clase debo pasarle algun tipo para que ocupe el generico T y otro para generico I:
+
+var genIns = new NombreClass<int, string>(); => en este caso el generico T seria un tipo int y el generico I seria string.
+
+# Interfaces genericas
+
+
+# Restricciones de los genericos
+
+
+# Lista, colecciones y arreglos
+
+
+# Diccionarios
+
+
+# FIFO con Queues
+
+
+# LIFO con Stack
+
+
+# Conjuntos con HashSet
+
+
+# Introduccion a los arreglos
+
+
+# Arreglos bidimensionales
+
+
+# Matrices
+
+
+# Jagged Arrays o Arreglos de arreglos
+
+
+# Delegados
+
+
+# Delegados func y action
