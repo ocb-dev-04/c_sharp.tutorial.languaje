@@ -951,9 +951,25 @@ Y asi sucesivamente.
 # Readonly vs Const
 Ambas tienen algo en comun, no pueden cambiar su valor, const por su parte una ve definido no se le puede asignar otro valor y readonly por su parte, debe inicializarse con un valor o asignarsele en el constructor.
 
-# Ref vs Out
+* const => debes asignarle el valor en el instante en que la declaras, y no puedes pasarselo como referencia, osea, no puedes decir que es igual a el valor de una propiedad de una clase instanciada.
 
+* readonly => le puedes asignar el valor como referencia, explicito, desde el constructor, como quieras, solo que solo es de lectura como su nombre lo dice (readonly = solo lectura).
+
+readonly es superior a const porque al igual que ella no es modificable pero al momento de asignarle valor acepta cualquier forma sea explicita, implicita o por referencia.
+
+Es mas que obvio el hecho de que los tipos que se le pueden asignar son todos (clases, httpcontex, loggers, etc...)
+
+# Ref vs Out
+Un tipo de refencia es cuando le indicamos a una variable que su valor dependera de una variable a la cual apunta la referencia.
+Los tipos int, double, string y demas no son de referencia, ya que son guardados directamente en la memoria.
+
+Que tal si queremos que se comporten como si fueran referencias?
+
+Usamos "ref" => para hacer que un tipo de variable se comporte como si fuera de referencia, esto nos permite cambiar el valor de una variable aun despues de haberle asignado uno.
+
+Usamos "out" => hace lo mismo que ref, solo que no require que la variable que se va a pasar se inicialice. Pero a la hora de asignarle un valor en el metodo que se invoca debes asignarle un valor obligatoriamente, ya que al no venir inicializada debes de inicializarla en el metodo.
+
+En resumen, out te obliga a asignarle un valor, pero ref no. Y ya.
 
 # Introduccion a los genericos
-
 

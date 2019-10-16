@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/049. ref_vs_out/049. ref_vs_out.csproj": {}
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/048. ref_vs_out/049. ref_vs_out.csproj": {}
   },
   "projects": {
-    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/049. ref_vs_out/049. ref_vs_out.csproj": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/048. ref_vs_out/049. ref_vs_out.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/049. ref_vs_out/049. ref_vs_out.csproj",
+        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/048. ref_vs_out/049. ref_vs_out.csproj",
         "projectName": "049. ref_vs_out",
-        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/049. ref_vs_out/049. ref_vs_out.csproj",
+        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/048. ref_vs_out/049. ref_vs_out.csproj",
         "packagesPath": "/home/oscar/.nuget/packages/",
-        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/049. ref_vs_out/obj/",
+        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/048. ref_vs_out/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
