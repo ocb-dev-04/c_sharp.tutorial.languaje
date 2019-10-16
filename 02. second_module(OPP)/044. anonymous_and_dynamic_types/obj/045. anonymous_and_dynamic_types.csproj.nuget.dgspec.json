@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/045. anonymous_and_dynamic_types/045. anonymous_and_dynamic_types.csproj": {}
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/044. anonymous_and_dynamic_types/045. anonymous_and_dynamic_types.csproj": {}
   },
   "projects": {
-    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/045. anonymous_and_dynamic_types/045. anonymous_and_dynamic_types.csproj": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/044. anonymous_and_dynamic_types/045. anonymous_and_dynamic_types.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/045. anonymous_and_dynamic_types/045. anonymous_and_dynamic_types.csproj",
+        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/044. anonymous_and_dynamic_types/045. anonymous_and_dynamic_types.csproj",
         "projectName": "045. anonymous_and_dynamic_types",
-        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/045. anonymous_and_dynamic_types/045. anonymous_and_dynamic_types.csproj",
+        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/044. anonymous_and_dynamic_types/045. anonymous_and_dynamic_types.csproj",
         "packagesPath": "/home/oscar/.nuget/packages/",
-        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/045. anonymous_and_dynamic_types/obj/",
+        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/044. anonymous_and_dynamic_types/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"

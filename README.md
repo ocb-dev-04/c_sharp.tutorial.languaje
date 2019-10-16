@@ -891,16 +891,65 @@ public INombreInterface ClassFactory(string cmd)
 Y es mas que obvio que el main method llamara la clase que tiene este metodo, no las clases que se instancian.
 
 # Tipos anonimos y dynamic
+Los tipos "anonimos" son aquellos tipos que no estan definidos por c#,osea, los creamos nosotros, por lo general su sintaxis es esta:
 
+var anonimo = { nombre_propiedad = valor_propiedad ... };
+
+Parecido a un JSON solo que en ves de usar comillas y : se usa un nombre en si, ejemplo:
+
+var anonimos = new {
+    nombre = "Fulano",
+    apellido = "De tal",
+    edad = 56,
+    tamano = 1.80
+};
+
+Como puedes ver, los tipos anonimos se paracen a las listas, de manera que con un foreach podemos iterarlos, solo que, la lista tendra como tipo generico un <dynamyc>.
+
+Seria algo como esto:
+
+List<dynamic> anonimosList = new List<dynamic>();
+anonimosList.Add(anonimos);// en este caso anonimos es el que                                     definimos arriba con nombre, apellido,                              edad, etc...
+foreach(dynamic anon in anonimosList)
+{
+    Console.WriteLine(anon);
+}
+
+OJO: LOS TIPOS ANONIMOS REQUIREN DE DINAMICOS PARA SER ITERADOS, PERO, LOS TIPOS DINAMICOS FORMAN CUELLOS DE BOTELLAS EN TU APP, DE MANERA QUE EVITALOS A TODA COSTA.
 
 # Clases abstracta
+Muchas veces las clases padres solo las necesitamos para compartir codigo con las clases hijos, pero no es necesario instanciarla ya que no accederemos a ningun dato relevante, como hacemos eso? Pues con clases abstractas.
 
+En si, la unica diferencia que tiene con las clases comunes es que no permite la instancia de ella, por tanto no tenemos acceso a sus propiedades ni metodos. 
+
+Para definirla basta con escribir:
+
+public abstract class NombreClase
+{
+    // y podemos definir aqui cualquier campo, propiedad y metodo
+}
 
 # Metodos genericos
+A veces tenemos que hacer la misma accion solo que con Tipos distintos (cuando me refiero a tipos me refiero a int, string, clase, etc...), y tendemos a hacer un metodo para cada tipo. Con los genericos nos ahorramos esto. Basicamente un generico nos permite pasar como parametro cualquier tipo. Ejemplo:
 
+public tipo_de_retorno NombreMetodo<T>(T valor)
+{
+    ... codigo
+    ... codigo
+}
+
+Si te fijas, agregamos algo al nombre del metodo, a esto llamamos generico, y puedes poner cualquier letra realmente, pero es un estandar usar la "T". de manera que a la hora de invocar este metodo seria asi:
+
+Si es para pasar la clase Persona pues:
+NombreMetodo<Persona>(T valor);
+
+Si es para la clase Correo pues:
+NombreMetodo<Correo>(T valor);
+
+Y asi sucesivamente.
 
 # Readonly vs Const
-
+Ambas tienen algo en comun, no pueden cambiar su valor, const por su parte una ve definido no se le puede asignar otro valor y readonly por su parte, debe inicializarse con un valor o asignarsele en el constructor.
 
 # Ref vs Out
 

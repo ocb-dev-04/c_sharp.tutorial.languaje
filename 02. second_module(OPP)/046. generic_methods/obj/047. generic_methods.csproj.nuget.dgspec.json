@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/047. generic_methods/047. generic_methods.csproj": {}
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/046. generic_methods/047. generic_methods.csproj": {}
   },
   "projects": {
-    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/047. generic_methods/047. generic_methods.csproj": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/046. generic_methods/047. generic_methods.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/047. generic_methods/047. generic_methods.csproj",
+        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/046. generic_methods/047. generic_methods.csproj",
         "projectName": "047. generic_methods",
-        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/047. generic_methods/047. generic_methods.csproj",
+        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/046. generic_methods/047. generic_methods.csproj",
         "packagesPath": "/home/oscar/.nuget/packages/",
-        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/047. generic_methods/obj/",
+        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/046. generic_methods/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
