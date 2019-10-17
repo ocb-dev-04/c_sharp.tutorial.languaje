@@ -1196,10 +1196,85 @@ Y algunos mas que no son muy usados pero que es bueno que pruebes.
 Asi como Queue nos serviria para procesos que requieran orden de llegada, stack serviria de igual manera para mostrar el utlimo de primero.
 
 # Conjuntos con HashSet
+Un conjunto podemos definirlo como colecciones de objetos que no se repiten.
 
+Nos beneficia ya que hay muchas operaciones en los conjuntos que nos permiten realizar grandes tareas sin ucho esfuerzo.
+
+Para eso usamos HasSet que no es mas que una coleccion al cual le asignamos un generico:
+
+HashSet<tipo> instancia = new HashSet<tipo>();
+
+Ejemplo:
+
+HashSet<int> instancia = new HashSet<int>();
+
+Algunos de sus metodos son:
+
+1. Add => agregar valor al conjunto
+2. Clear => limpiar todo el conjunto
+3. Contains => verificar si el conjunto contiene un valor
+
+Pero hablamos de conjunto de manera que necesitaremos dos conjuntos y hacer operaciones de conjunto, que son (union, interseccion, diferencia, diferencia asimetrica, etc...)
+
+1. Union => une todos los elementos de un conjunto sin repetir, y crea un conjunto nuevo con ellos
+2. Interseccion => toma todos los elementos que se repiten, y crea un conjunto nuevo con ellos
+3. Diferencia => toma los elementos del conjunto 1 que no se repiten en el conjunto 2
+4. Diferencia asimetrica => toma los elementos de ambos conjunto que no se repiten en ninguno. 
+
+A diferencia de lo que hemoms visto, si intentamos agregar un valor que ya existe no devuelve error, solo no lo agrega y ya.
+
+De manera que los conjuntos pueden servinos para de cierta manera filtrar lo que tenemos en las listas.
 
 # Introduccion a los arreglos
+Son muy parecidos a las listas. En si son una secuencia de elementos. La diferencia en si es que las listas son mucho mas flexibles que los arreglos.
 
+Un arreglo nos pipde que al momento de declararlo le indiquemos cuantos elementos puede tener. Su sintaxis es esta:
+
+tipo[] nombre_arreglo = new tipo[cantidad_de_elemento_maxima];
+
+Ejemplo:
+
+Un arreglo de numeros que tenga como indice maximo 5:
+
+int[] numeros = new int[5];
+
+Para agregarle elementos debemos hacerlo mediante su indice, seria asi:
+
+numeros[0] = 4;
+numeros[1] = 45;
+
+y asi por el estilo, pero por lo general se utiliza un ciclo for para llenarlos y vaciarlos dicho de manera simple:
+
+for(int i = 0; i < numeros.Length; i++)
+{
+    numeros[i] = ... lo que queramos asignar
+    // aqui vamos asignando elemento segun se vayan pasando los indices en base a i
+}
+
+Pero tambien puedes asignar valores inmediatamente, ejemplo:
+
+string[] cadenas = new string[]{"Fulano", "Fulanito", "Perencejo", "Futanejo", "Maria", "Jose" };
+
+En este caso C# inferira que el indice maximo sera el total de elemento guardados en esta inicializazcion. De manera que para C# sera esto:
+
+string[] cadenas = new string[5];
+Ya que 5 es el indice mas alto de los elementos que insertamos.
+
+PARA REDIMENCICONAR UN ARREGLO SOLO USAMOS EL METODO RESIZE:
+
+Por ejemplo si necesitas que el arreglo de string cadenas que definimos hace un momento tenga mas indices solo tienes que hace esto:
+
+Array.Resize<string>(ref cadenas, 8);
+
+El tipo debe ser el mismo, aunque si quieres modificarlo debes pasar parametros del nuevo tipo no del antiguo, luego pasamos la referncia del nombre que le pusimos al arreglos y por ultimo los indices que quieres que tenga.
+
+Otro metodo muy usado en los arreglos es esperar las entradas, y deifnir el arreglo con un total de indices en base a las entradas o datos que llegan, pero si no puedes prehever cuantos son los datos, pues usa el Resize.
+
+Ventajas:
+
+Al ser un tipo primitivo, son mas sencillos, rapidos y tienen mejor performance que las colecciones.
+
+Usa las colecciones cuando necesites flexibilidad, usa arreglos para cunado necesites velocidad y simplicidad.
 
 # Arreglos bidimensionales
 
