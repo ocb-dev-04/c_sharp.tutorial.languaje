@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/053. list_collections_and_arrays/053. list_collections_and_arrays.csproj",
+      "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/054. list_collections_and_arrays/053. list_collections_and_arrays.csproj",
       "projectName": "053. list_collections_and_arrays",
-      "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/053. list_collections_and_arrays/053. list_collections_and_arrays.csproj",
+      "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/054. list_collections_and_arrays/053. list_collections_and_arrays.csproj",
       "packagesPath": "/home/oscar/.nuget/packages/",
-      "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/053. list_collections_and_arrays/obj/",
+      "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/02. second_module(OPP)/054. list_collections_and_arrays/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

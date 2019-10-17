@@ -731,7 +731,7 @@ Ala hora de crear una clase padre, toma en cuenta esto:
 Vaca { nombre, patas, peso, color, tipo_de_cola }
 Perro { nombre, patas, peso, color, tipo_de_cola }
 
-Si te fijas tienen propiedades en comun, en este caso todas, pero eso es solo porque no he pensado en mas propiedades, el punto es que la clase padrea animal toma todas las propiedades comunes de las derivadas asi que seria de esta manera:
+Si te fijas tienen propiedades en comun, en este caso todas, pero eso es solo porque no he pensado en mas propiedades, el punto es que la clase padre animal toma todas las propiedades comunes de las derivadas asi que seria de esta manera:
 
 Animal { nombre, patas, peso, color, tipo_de_cola }
 Vaca {  }
@@ -1038,22 +1038,162 @@ Al instanciar esta clase debo pasarle algun tipo para que ocupe el generico T y 
 var genIns = new NombreClass<int, string>(); => en este caso el generico T seria un tipo int y el generico I seria string.
 
 # Interfaces genericas
-
+Nos permiten el uso de clases genericas pero con la ventaja del polimorfismos, osea pedimos un tipo de interface y si pasamos un clase que hereda de ella no pasara nada, ya que por contrato debe definir cada uno de los metodos que ella posee.
 
 # Restricciones de los genericos
+Hasta ahora hemos usado genericos a nivel basico, pues aceptabamos cualquier tipo. Pero podemos definir restricciones, este tema es algo delicado y complicado, pon atencion y no pases de el, hasta que no lo comprendas bien.
 
+Podemos ordenarle a una clase, metodo (lo que sea que estemos hacinedo generico) que solo recibiremos un tipo especifico, para esto a la definicion que hasta ahora tenemos debemos agregarle algo mas, fijate:
+
+public void GenericoStruct<T>(T valor)
+{
+
+}
+
+Hasta ahora haciamos esto, lo que le agregamos es unas cuantas cositas detras.
+
+public void GenericoStruct<T>(T valor) : where T : struct
+{
+
+}
+
+ves ese ( : where T : struct ), con esto definimos que el metodo solo acepta genericos de tipo struct, es bien facil de recordar si te fijas, pues la sentencia solo dice, traducido al espanol (donde T : tipo_de_dato_aceptado).
+
+Aqui tienes algunos ejemplos con otros datos:
+
+int => : where T : int
+double => : where T : double
+float => : where T : float
+class => : where T : class
+IEnumerable => : where T : IEnumerable
+
+Tambien puedes aplicar varias restricciones, ejemplo:
+
+double => : where T : class, IEnumerable<T>
+
+Esto lo colocas detras de cada metodo, clase, interface, detras de lo que sea que este haciendo generico y listo.
+
+OJO: Uso T, pero si la representacion de tu generico es M, O, MiGenerico o como sea, debes usar esa misma representacion.
 
 # Lista, colecciones y arreglos
+Una lista nos permite guardar una coleccion de valores de un tipo en especifico. Su sintaxis  es esta:
 
+List<tipoDeDato> nombre_identitficativo = new List<tipoDeDato>();
+
+Si defines que le pasaras enteros, solo debes pasar enteros, no puedes hacer una mezcla.
+
+Posee muchos metodos para agregar, insertar, remover, etc...
+
+List<int> numeros = new List<int>();
+
+1. Agregar => numeros.Add(4);// agrega un valor al final de lal lista
+2. Insertar => numeros.Insert(2, 56);// esta inserta un valor en el indice indicado, osea, de los dos parametros, el primero es el indice, el segundo es el valor a insertar.
+3. Remove => numeros.Remove(5); // obviamente el valor que quieres remover debe existir
+4. RemoveAt => numeros.RemoveAt(4) // remueve el elemento que se encuentra en ese indice
+5. Clear => numeros.Clear()// es mas que obvio que limpia la lista
+
+Podemos mostrar todos los elementos de una lista por medio de un foreach:
+
+foreact(var nums in numeros)
+{
+    Console.WriteLine(nums);
+}
+
+Pero tambien puedes acceder mediante un indexador que seria este:
+
+var numeroI = numeros[3]// accede al valor almacenado en el index 3 y se lo asigna a la variable
 
 # Diccionarios
+Es un estructura que nos permite asociar llaver y valores.
 
+Su sintaxis es:
 
-# FIFO con Queues
+Dictionary<tipo_llave, tipo_valor> instancia = new Dictionary<tipo_llave, tipo_valor>();
 
+Ejemplo:
 
-# LIFO con Stack
+Dictionary<string, int> nombreEdad = new Dictionary<string, int>();
 
+La llave seria strig, el valor seria un int.
+
+Puntos importantes:
+
+1. No se pueden repetir las llaves, osae, si definiste una llave de valor "victor" no puedes repetirla. En el caso de los valores si, las veces  que quieras.
+2. No llames llaves que no existan, te daran error.
+3. Si le indicas que pasaras valores de un tipo no le pases valores de tipo diferente, pues obviamente te dara error.
+
+Algunos de sus metodos son:
+
+1. Add => agregar llave y valor
+2. Remove => remover un valor en base a su llave
+3. Clear => limpiar
+4. ContainsKey => retorna un boleano en caso de que tenga esa llave, esto se usa para acceder a un llave que no estamos muy seguro de que exista.
+5. ContainsValue => igual que el ContainsKey pero con valores.
+
+Puedes iterar un diccionario por medio de un foreach agregando la propiedad Keys:
+
+foreach(var content in dictionaryName.Keys)
+{
+    // asi mostrara las llaves
+    Console.WriteLine(content);
+    // asi mostrara el valor
+    Console.WriteLine(dictionaryName[content]);
+}
+
+Son herramientas bastantes utiles a la hora de por ejemplo parcear a JSON y demas.
+
+# FirstIn FirstOut con Queue
+Queue es un getionador de colecciones  el cual utiliza el principio
+first-in => first-out, osea, llegas de primero, te vas de  primero,llegas de ultimo, te vas de  ultimo.
+
+Podria decirse que es como hacer una fila. Te toca el turno en el que llegaste.
+
+Toma valores genericos, puedes pasar, int, double, string, etc...
+
+Su sintanxis es simple:
+
+Queue<tipo_dato> instancia = new Queue<tipo_dato>();
+
+Algunos de sus metodos son:
+
+1. Enqueue => agrega un elemento a la cola. Como ya te explique trabaja a modo de fila. 
+2. Dequeue => saca un registro y te lo trae, de manera que puedes almacenarlo en una variable o simplemente eliminarlo.
+3. Clear => limpia el Queue
+4. ToArray => el nombre lo dice claro, puedes almacenar tu Queue en un arreglo, del mismo tipo de valor que almacenas en el obviamente. Y para mostarlo pues puedes usar el for de toda la vida, y pues como es array esta de mas decir que el index empieza en 0.
+5. Contains => verificar si entre los valores existe el valor especificado.
+
+Para iterarlo usas un foreach como para todo colection:
+
+foreact(var item in queueName)
+{
+    Console.WriteLine(item);
+}
+
+Preguntaras para que quieres un Queue, pues para todo proceso que guarde o muestre datos por orden de llegada, por ejemplo:
+
+Se tienen que imprimir en orden de llegada los archivos en una impresora, el Queue te garantizara que segun vallan llegando los archivo (en este caso el path de dicho archivo) en ese orden se iran imprimiendo.
+
+# LastIn FirstOut con Stack
+Al igual que Queue nos permite gestionar colecciones pero en ves de sacar el primero que se agrega, saca el ultimo (last in, first out).
+
+La sintaxis es tecnicamente la misma:
+
+Stack<tipo_dato> instancia = Stack<tipo_dato>();
+
+Seria algo como esto:
+
+Stack<int> instancia = Stack<int>();
+
+Algunos de sus metodos son:
+
+1. Push => agrega un elemento al stack
+2. Pop => extrae un elemento del stack, y al igual que Queue, te lo trae de manera que lo puedes almacenar en una variable
+3. Contains => verifica si existe el valor pasado como parametro en el stack.
+4. ToArray => convierte el stack en arreglos, y por supuesto que el tipo de arreglo debe coincidir con el tipo del stack. 
+
+Y algunos mas que no son muy usados pero que es bueno que pruebes.
+
+Asi como Queue nos serviria para procesos que requieran orden de llegada, stack serviria de igual manera para mostrar el utlimo de primero.
 
 # Conjuntos con HashSet
 
