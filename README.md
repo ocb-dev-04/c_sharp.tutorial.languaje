@@ -1277,7 +1277,19 @@ Al ser un tipo primitivo, son mas sencillos, rapidos y tienen mejor performance 
 Usa las colecciones cuando necesites flexibilidad, usa arreglos para cunado necesites velocidad y simplicidad.
 
 # Arreglos bidimensionales
+A diferencia de los arreglos que ya vinos, planos, osea de una sola dimension, podemos crear arreglos de mas de una dimension, al cual llamamos, arreglos bidimensionales tambien se le puede llamar matricecs.
 
+Se definen casi igual que los arreglos normales:
+
+tipo[,] nombre = new tipo[tamano_filas, tamano_columnas];
+
+Seria algo como:
+
+int[,] nombre = new int[5, 4];
+
+Para iterarlos nos valemos de dos ciclo for, uno para filas y otro para columnas, para esto debemos saber el tamano de cada cual y para eso usamos la propiedad:
+
+GetLength(0 o 1) cero para referirnos a las filas, 1 para referirnos a las columnas.
 
 # Matrices
 
