@@ -1292,7 +1292,7 @@ Para iterarlos nos valemos de dos ciclo for, uno para filas y otro para columnas
 GetLength(0 o 1) cero para referirnos a las filas, 1 para referirnos a las columnas.
 
 # Matrices
-
+Ya en el anteriro tema tocamos las matrices como arreglos  bidimensionales, en esta ocacion, haremos una clase para procesar sumas de matrices.
 
 # Jagged Arrays o Arreglos de arreglos
 
