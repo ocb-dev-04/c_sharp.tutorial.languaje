@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/bin/Debug/netcoreapp2.2/062. fix_arrays.deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/bin/Debug/netcoreapp2.2/062. fix_arrays.runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/bin/Debug/netcoreapp2.2/062. fix_arrays.runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/bin/Debug/netcoreapp2.2/062. fix_arrays.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/bin/Debug/netcoreapp2.2/062. fix_arrays.pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/obj/Debug/netcoreapp2.2/062. fix_arrays.csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/obj/Debug/netcoreapp2.2/062. fix_arrays.csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/obj/Debug/netcoreapp2.2/062. fix_arrays.AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/obj/Debug/netcoreapp2.2/062. fix_arrays.AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/obj/Debug/netcoreapp2.2/062. fix_arrays.dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/04. fourth_module(Colection and Arrays)/062. fix_arrays/obj/Debug/netcoreapp2.2/062. fix_arrays.pdb

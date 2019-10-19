@@ -55,7 +55,7 @@ namespace _061._matrix
             }
         }
 
-        // para saber el tamano de las filas y columnas
+        // para saber el tamano de las filas y columnas, se accede a estas por medio de la instancia de la clase en si
         public int Filas { get{ return _data.GetLength(0); } }
         public int Columnas { get{ return _data.GetLength(1); } }
 
@@ -74,15 +74,18 @@ namespace _061._matrix
 
         public static Matriz operator +(Matriz a, Matriz b)
         {
+            // confirma si las filas y columnas de ambas matrices son iguales
             if(a.Filas != b.Filas || a.Columnas != b.Columnas)
                 throw new ApplicationException("Las matrices deben ser de la misma dimension");
 
+            // creaamos una matriz de resultado
             Matriz c = new Matriz(a.Filas, a.Columnas);
 
             for (int i = 0; i < a.Filas; i++)
             {
                 for (int j = 0; j < a.Columnas; j++)
                 {
+                    // le asignamos la suma de ambos valores a la misma coordenada de la matriz resultado
                     c[i, j] = a[i, j] + b[i, j];
                 }
             }
@@ -90,6 +93,7 @@ namespace _061._matrix
             return c;
         }
 
+        // reescribimos el metodo ToSting para que en este caso nos devuelva la lectura de la matriz
         public override string ToString()
         {
             var sb = new StringBuilder();

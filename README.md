@@ -1292,12 +1292,57 @@ Para iterarlos nos valemos de dos ciclo for, uno para filas y otro para columnas
 GetLength(0 o 1) cero para referirnos a las filas, 1 para referirnos a las columnas.
 
 # Matrices
-Ya en el anteriro tema tocamos las matrices como arreglos  bidimensionales, en esta ocacion, haremos una clase para procesar sumas de matrices.
+Ya en el anterior tema tocamos las matrices como arreglos  bidimensionales, en esta ocacion, haremos una clase para procesar sumas de matrices. Asi que no habra mucho contenido teorico, ser mas practico.
 
 # Jagged Arrays o Arreglos de arreglos
+Un arreglo de arreglos como tu sentido coun ya se lo imagina no es mas que un arreglo el cual tiene como elementos otros arreglos.
 
+Su definicion es simple:
+
+tipo[][] nombre = new tipo[indice_cantidad_de_arreglos][];
+
+Osea que seria:
+
+int[][] jaggedArray = new int[2][];
+
+Un arreglo de arreglos enteros que tendra dos arreglos dentro de el.
+
+Luego definimos el tamano de arreglos independientes, los cuales seran los que iran dentro del arreglo de arreglo. Se define asi:
+
+nombre[numero_de_indice_en_el_array] = new tipo_antes_definido[tamano_del_arreglo_hijo];
+
+Osea:
+
+jaggedArray[0] = new int[4];
+
+El arreglo que ira en la posicon primera sera de un indice d 4.
+
+Para insertar algun valor seria esto:
+
+nombre[indice_de_arreglo][indice_en_el_arreglo] = valor;
+
+Osesa:
+
+jaggedArray[0][0] = 6;
+
+En el primer arreglo, la primera posicion inserta un 6.
+
+Para el segundo arreglo pues:
+
+jaggedArray[1][0] = 45;
+
+En el segundo arreglos, en la primera posicion de este, inserta el 45.
+
+Para iterarlo pues:
+
+for (int i = 0; i < jaggedArray.GetLength(0); i++)
+{
+    var join = string.Join(",",jaggedArray[i]);
+    Console.WriteLine(join);
+}
+
+Primero debemos saber cuantos arreglos hay dentro del padre asi que usamos la propiedad GetLength para saberlo, luego en base a esto, recorremos el arreglo. Y listo.
+
+# Modulo de LINQ
 
 # Delegados
-
-
-# Delegados func y action
