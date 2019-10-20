@@ -1542,8 +1542,54 @@ Primero, ordena en base a salario y luego ese orden resultante lo ordena por nom
 En si, ThenBy es un ordenador secundario. Pero bastante util.
 
 # LINQ - Reverse
+Nos permite voltear el orden de una lista. Ojo no ordernar, voltear, de manera que podemos tener la misma lista con los mismos elementos solo que reversada.
+
+Cabe resaltar el hecho de que no retorna ningun valor, oseas, aplica los cambios a la lista en si apartir de su declaracion, asi que ten cuidado, eso te puede causar algunos problemitas.
+
+Su sintaxis es muy simple:
+
+nombreLista.Reverse();
+
+Y ya:
+
+Pero tambien contamos con una sobrecarga la cual nos permite definir en que indice empezar y cuantos indices tomar para voltear.
+
+Imagina que a una lista quieres que los elementos de los estremos queden iguales, y que solo cambien los elementos del centro pues esta es la sintaxis:
+
+nombreLista.Reverse(indice, numero_de_indices_a_tomar);
+
+Para ejemplo de dejar los estremos iguales y cambiar los del medio seria:
+
+nombreLista.Reverse(1, nombreLista.Count - 2);
+
+De esta manera comenzaria en el segundo elemento y terminaria de reversar antes del ultimo.
 
 # LINQ - First y FirstOrDefault
+Ambas directivas la usamos para obtenr el primer elemento de una lista. La diferenia radica en el hecho de que si First no encuentra elemento lanza una excepcion, mientras que FirstOrDefault trae el valor por defecto del tipo que si es int por ejemplo, retorna un 0.
+
+First => nos trae el primer elemento de la lista, en caso de que usemos alguna expresion lambda nos trae el primer elemento que cumpla con la condicion. NOTA: Si no encuentra elemento retorna una excepcion.
+
+FirstOrDefault => nos trae el primer elemento de la lista, en caso de que usemos alguna expresion lambda nos trae el primer elemento que cumpla con la condicion. Si no encuentra elemento que coincida pues traera el valor por defecto del tipo, ejemplo: el valor por defecto de int es 0.
+
+Mira aqui algunos ejemplo:
+
+var primerElement = numeros.FirstOrDefault();
+
+Tra el primer elemento de la lista numeros o en su defecto el valor por defecto del tipo.
+
+Pero tambien podemos usarlo con labda:
+
+var primerElementoParFirst = numeros.First(x => x % 2 == 0);
+
+Retorna el primer elemento que sea divisible entre 2.
+
+Y obviamente se usa con entidades, asi:
+
+var menorEdad = personas.FirstOrDefault(x => x.Age < 18);
+
+Nos retorna el primer registro donde la persona sea menor de edad.
+
+Asi que estas dos directivas nos pueden servir en el momento en el que necesitamos un registro que cumpla con una condicion y lo queramos del mismo tipo osea, si es un int, la variable sera int, si es class la variable sera class, etc...
 
 # LINQ - Select ( proyecciones )
 
