@@ -6,7 +6,7 @@ C# es un lenguaje de programación multiparadigma desarrollado y estandarizado p
 
 Su sintaxis básica deriva de C/C++ y utiliza el modelo de objetos de la plataforma .NET, similar al de Java, aunque incluye mejoras derivadas de otros lenguajes.
 
-# PRIMER MODULO
+# PRIMER MODULO : BASICO
 
 # Variables
 Se usan para guardar informacion y ser usada posteriormente.
@@ -451,7 +451,7 @@ si necesitas pasar un nullable a un metodo y recibe un tipo de dato no nullable,
 
 nombre_variable.Value => con la propiedad (Value) envia el valor en si de la variable no la variable como tal. Obviamente primero debes hacer una condicional para saber que la propiedad nullable tiene un valor.
 
-# SEGUNDO MODULO
+# SEGUNDO MODULO: OPP
 
 # Constructores
 Es el primer metodo que se ejecuta al instanciar una clase.
@@ -952,25 +952,6 @@ public abstract class NombreClase
     // y podemos definir aqui cualquier campo, propiedad y metodo
 }
 
-# Metodos genericos
-A veces tenemos que hacer la misma accion solo que con Tipos distintos (cuando me refiero a tipos me refiero a int, string, clase, etc...), y tendemos a hacer un metodo para cada tipo. Con los genericos nos ahorramos esto. Basicamente un generico nos permite pasar como parametro cualquier tipo. Ejemplo:
-
-public tipo_de_retorno NombreMetodo<T>(T valor)
-{
-    ... codigo
-    ... codigo
-}
-
-Si te fijas, agregamos algo al nombre del metodo, a esto llamamos generico, y puedes poner cualquier letra realmente, pero es un estandar usar la "T". de manera que a la hora de invocar este metodo seria asi:
-
-Si es para pasar la clase Persona pues:
-NombreMetodo<Persona>(T valor);
-
-Si es para la clase Correo pues:
-NombreMetodo<Correo>(T valor);
-
-Y asi sucesivamente.
-
 # Readonly vs Const
 Ambas tienen algo en comun, no pueden cambiar su valor, const por su parte una ve definido no se le puede asignar otro valor y readonly por su parte, debe inicializarse con un valor o asignarsele en el constructor.
 
@@ -994,6 +975,13 @@ Usamos "out" => hace lo mismo que ref, solo que no require que la variable que s
 
 En resumen, out te obliga a asignarle un valor, pero ref no. Y ya.
 
+# Clases selladas
+Son clases que no pueden ser heredadas. Asi de simple, asi de sencillo.
+
+Te preguntaras, para que quiero una clase que no puede ser heredada?
+
+Pues imagina que creas la clase Animal,luego Perro hereda de ella y luego Doberman hereda de perro, despues de doberman no hay mas nada, de manera que doberman puede ser sellada.
+
 # Introduccion a los genericos
 Los genéricos introducen en .NET el concepto de parámetros de tipo,lo que le permite diseñar clases y métodos que aplazan la especificación de uno o varios tipos hasta que el código de cliente declare y cree una instancia de la clase o el método. Por ejemplo, al usar un parámetro de tipo genérico T puede escribir una clase única que otro código de cliente puede usar sin incurrir en el costo o riesgo de conversiones en tiempo de ejecución u operaciones de conversión boxing.
 
@@ -1003,12 +991,26 @@ Este tema es algo extenso si quieres mas ejemplos entra en este link:
 
 https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/generics/
 
-# Clases selladas
-Son clases que no pueden ser heredadas. Asi de simple, asi de sencillo.
+# TERCER MODULO: GENERICOS
 
-Te preguntaras, para que quiero una clase que no puede ser heredada?
+# Metodos genericos
+A veces tenemos que hacer la misma accion solo que con Tipos distintos (cuando me refiero a tipos me refiero a int, string, clase, etc...), y tendemos a hacer un metodo para cada tipo. Con los genericos nos ahorramos esto. Basicamente un generico nos permite pasar como parametro cualquier tipo. Ejemplo:
 
-Pues imagina que creas la clase Animal,luego Perro hereda de ella y luego Doberman hereda de perro, despues de doberman no hay mas nada, de manera que doberman puede ser sellada.
+public tipo_de_retorno NombreMetodo<T>(T valor)
+{
+    ... codigo
+    ... codigo
+}
+
+Si te fijas, agregamos algo al nombre del metodo, a esto llamamos generico, y puedes poner cualquier letra realmente, pero es un estandar usar la "T". de manera que a la hora de invocar este metodo seria asi:
+
+Si es para pasar la clase Persona pues:
+NombreMetodo<Persona>(T valor);
+
+Si es para la clase Correo pues:
+NombreMetodo<Correo>(T valor);
+
+Y asi sucesivamente.
 
 # Ejemplo de clases genericas
 Puedes declarar una clase generica de esta manera no estas atado a solo pasar "x" tipo como parametro a ella.
@@ -1074,6 +1076,8 @@ double => : where T : class, IEnumerable<T>
 Esto lo colocas detras de cada metodo, clase, interface, detras de lo que sea que este haciendo generico y listo.
 
 OJO: Uso T, pero si la representacion de tu generico es M, O, MiGenerico o como sea, debes usar esa misma representacion.
+
+# CUARTO MODULO: COLECCIONES Y ARREGLOS
 
 # Lista, colecciones y arreglos
 Una lista nos permite guardar una coleccion de valores de un tipo en especifico. Su sintaxis  es esta:
@@ -1343,6 +1347,134 @@ for (int i = 0; i < jaggedArray.GetLength(0); i++)
 
 Primero debemos saber cuantos arreglos hay dentro del padre asi que usamos la propiedad GetLength para saberlo, luego en base a esto, recorremos el arreglo. Y listo.
 
-# Modulo de LINQ
+# QUINTO MODULO: LINQ
 
 # Delegados
+En si es pasar una funcion o metodo como argumento, por lo general se pasa como argumentos tipos, clases etc.
+
+En palabras mas tecnicas, es un objeto que nos permite guardar una referencia a una funcion que cumple cierta caracteristicas que nosotros mismos queremos que tenga.
+
+Utilizamos la palabra reservada delegate y en si definimos algunas caracteristicas que debe poseer el Signature de la funcion que pasemos al delegado.
+
+"Signature" no es mas que las caracteristicas de una funcion, osea su nombre, la cantidad de parametros, y el tipo de salida, etc...
+
+Su sintaxis es esta:
+
+delagete tipo_de_retorno NombreDelegado(parametros);
+
+Ejemplo:
+
+public delegate string DeEnteroAString(int valor);
+
+Si es de un solo parametro., o:
+
+public delegate string ReturnTheCombine(string name, string last);
+
+Si es de dos y asi sucesivamente.
+
+Ojo la palabra public es el tipico modificador de acceso, asi que no cambia respecto a los demas temas hablandos.
+
+Para instanciarlo hacemos esto:
+
+var nombre = new NombreDelegado(NombreFuncionQueEjecutara);
+
+Le pasamos como argumento al constructor la funcion que usaremos.
+
+Osea:
+
+var deEnteroAString = new DeEnteroAString(FuncionRetornaString);
+
+De esta manera al invocar ese delgado es como si invocaramos la funcion o metodo en si, lo hariamos de esta manera:
+
+Console.WriteLine(deEnteroAString(10));
+
+Com ves, mostramos en pantalla el resultado del delegado, al cual le pasamos como parametro los valores que necesita la funcion o metodo que invoca.
+
+Hasta ahora tu diras que esto es una locura, para que hacer algo que invoque una funcion o metodo si podemos invocarlo/a directamente, pues fijate que un delegado al ser un objeto puedes hacerlo parte de un parametro de una funcion, osea:
+
+public void NombreFuncion(DeEnteroAString funcion, int valor)
+{
+    ... codigo
+    funcion(valor);
+    ... codigo
+}
+
+Asi como ves, puedes pasar una funcion o metodo como parametro, tal como harias en JS.
+
+NOTA: al pasarlo como pametro no envias los parametros con el, se lo puedes asignar una ves dentro del metodo para el cual lo enviaste y tome datos de procesos del mismo metodo, ejemplo:
+
+public static void Template(DeEnteroAString algoritmo)
+{
+    int valor = asignas el valor
+    // entonoces invocas la funcion
+    Console.WriteLine(algoritmo(valor));
+    // fijate que la llamas como el nombre del parametro no como el //// nombre del delegado.
+}
+
+# Delegados func y action
+Aunque ya hablamos de delegados, fue en su forma primitiva con los tipicos pasos de:
+
+crear >> instanciar/asignar >> invocar
+
+Pero hay una manera mas simple de hacerlo, con la directiva Func<>:
+
+Func<tipo_entrada, tipo_retorno> nombre = NombreFuncion;
+
+Func<> toma dos valores, el de entrada y el de retorno, respectivamente, luego le damos un nombre al delegado y por ultimo le asignamos la funcion que invocara.
+
+Action al igual que Func nos permite definir un delegado, solo que este solo lo usamos cuando la funcion no tendra valores de retorno, esta es su sintaxis:
+
+Action<tipo_entrada, tipo_entrada> nombre = NombreFuncion;
+
+Si te fijas los valores que toma son ambos de entrada, obviamente aqui solo se muestran dos valores porque seran dos parametros, pero si son mas puesm agregas y listo.
+
+Ejemplo:
+
+Action<int, string, decimal, bool> ConMasParametros = MuchosParams;
+
+En fin, estas dos directivas es para facilitarte la vida con los delegados, pero ya depende de ti usar los delegados puros o estos mas simples.
+
+Y pues al igual que los delegados puros se pueden pasar como parametros a otros metodos/funciones.
+
+# Predicados
+Es un delegado reservado para funciones que tienen un parametro de salida de tipo booleano y que tienen unicamente un parametro de entrada.
+
+Predicate<tipo> nombre = funcionNombre;
+
+Hasta ahora los delegados lo hemos usado de manera basica, donde de verdad utilizaremos su poder en en las funciones anonimas, que es el siguiente tema.
+
+# Expresiones anonimas LAMBDA
+
+# Introduccion a LINQ
+
+# LINQ - Where
+
+# LINQ - Where con indice
+
+# LINQ - OrderBy y ThenBy
+
+# LINQ - Reverse
+
+# LINQ - First y FirstOrDefault
+
+# LINQ - Select ( proyecciones )
+
+# LINQ - skip y take
+
+# LINQ - GroupBy
+
+# LINQ - Any y All
+
+# LINQ - Sum
+
+# LINQ - Min, Max, Average
+
+# LINQ - Aggregate
+
+
+
+
+
+# SEXTO MODULO ( BASE DE DATOS )
+
+# Leyendo el appconfig.json desde C#
