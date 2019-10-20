@@ -1444,14 +1444,102 @@ Predicate<tipo> nombre = funcionNombre;
 Hasta ahora los delegados lo hemos usado de manera basica, donde de verdad utilizaremos su poder en en las funciones anonimas, que es el siguiente tema.
 
 # Expresiones anonimas LAMBDA
+Nos permite crear funciones sin necesidad de estar dando nombres y de la mano de los delegados podemos hacer resumenes increibles de codigo con la ayuda de ella, su sintaxis es esta:
+
+Func<tipo_entrada, tipo_salida> nombre = parametro(os) => {
+    ... codigo
+}
+
+Seria como esto:
+
+Func<int, int> duplicar = x => { return x * 2; };
+
+Si notas nos ahorramos el tener que declarar una funcion en bloque,e invocarla, solo la definimos inmediatamente y listo.
+
+Como ya podras haber sospechado, el nombre de anonima se le debe al hecho de que la defines y no puedes usarla fuera de donde esta definida, asi que si necesitas que una funcion sea accesible desde donde sea, es mejor que uses las de bloque que hemos usado de toda la vida.
 
 # Introduccion a LINQ
+En si nos sirve para hacer metodos mas compactos y legibles, tambien nos permite hacer un codigo mas simple y legible, de manera que en menos lineas hacemos el trabajo y es entendible hasta para una Junior/Novato. En este modulo estaremos viendo algunos de sus metodos mas usados.
 
 # LINQ - Where
+Nos sirve para iterar los elementos de una coleccion, evaluarlos en base a una condicion y tomar los que cumplen con la condicion dada.
+
+Su sintaxis es simple:
+
+var nombre = nombre_coleccion.Where(x => (condicion)).ToList();
+
+Agregamos el ToList() porque el resultado de Where es un IEnumerable, y lo que necesitamos es una lista con los datos que cumplan la condicion no un IEnumerable.
 
 # LINQ - Where con indice
+LINQ nos permite un overload en la consulta where, ya que podemos tambien usar el indice de la lista, osea, no el elemento sino el lugar que ocupa ese elemento, ejemplo:
+
+5, 6, 8, 3, 0, 1 => el 5 ocupada el indice o lugar 0, mientra que el 1 ocupa el indice y lugar 5.
+
+Podemos acceder al indice de una elemento de manera sencilla, agregando un parametro a la hora de instanciar el valor del elemento en si dentro del Where, le ponemos nombre de indice para ser mas explicitos en lo que hace ese valor:
+
+lista.Where((x, indice) => x > 18 && indice % 2 == 0).ToList();
+
+En este ejemplo buscamos todo aquel elemento mayor que 18 y que su posicion o indice sea divisor de 2.
+
+El indice en Where nos permite hacer consultas mas detalladas y especificas.
 
 # LINQ - OrderBy y ThenBy
+Como su nombre nos dice, nos permite ordenar una lista. El orderBy es el metodo pricipal y utilizamos una expresion lambda para especificarle algunos parametros:
+
+Ejemplo:
+
+var ascendente = numeros.Where(x => x > 0).OrderBy(x => x).ToList();
+
+Primero filtramos la lista y luego ordenamos en base al elemento en si.
+
+Pero podemos usarlo solo para ordenar, ejemplo:
+
+var ascendente = numeros.OrderBy(x => x).ToList();
+
+Esto nos retornara el la lista en orden ascendete, si lo quieres en orden descendente pues:
+
+var descendente = numeros.OrderByDescending(x => x).ToList();
+
+le pasamos a la expresion lambda el elemento por el cual ordenaremos, en este caso seria una lista de elemetos unicos. Pero que pasa si queremos filtrar una lista de una clase o entidad, pues:
+
+Asumiendo que esta sea la entitdad:
+
+class Persona
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public decimal Salary { get; set; }
+}
+
+Podemos hacer lo siguiente:
+
+var ordernarAsc = personas.OrderBy(x => x.Name).ToList();
+
+"personas" es el nombre de la intancia en si, i te fijas en el order by le pasamos en lambda que ordene en base a la propiedad nombre de la entidad. Obviamnete el descending tambien sirve aqui:
+
+var ordernarDesc = personas.OrderByDescending(x => x.Name).ToList();
+
+Y hara lo mismo solo que el orden sera el contrario.
+
+Como ya habras pensado podemos ordenar por cualquier propiedad de la entidad, ejemplo:
+
+Edad:
+
+var edadAsc = personas.OrderBy(x => x.Age).ToList();
+
+Sueldo:
+
+var orderSalary = personas.OrderBy(x => x.Salary).ToList();
+
+Pero tambien tenemos otro metodo que es:
+
+ThenBy => nos permite declara otros campos para organizar tomando como lista un orden antes dado, osea es un complemento del OrderBy funciona asi:
+
+var or = personas.OrderBy(x => x.Salary).ThenBy(x => x.Name).ToList();
+
+Primero, ordena en base a salario y luego ese orden resultante lo ordena por nombres, de esa manera si hay dos personas que ganan los mismo pero uno su nombre empieza con A y el del otro comienza con J, aunque ganen lo mismo, el que tiene el nombre con A se mostrara primero.
+
+En si, ThenBy es un ordenador secundario. Pero bastante util.
 
 # LINQ - Reverse
 

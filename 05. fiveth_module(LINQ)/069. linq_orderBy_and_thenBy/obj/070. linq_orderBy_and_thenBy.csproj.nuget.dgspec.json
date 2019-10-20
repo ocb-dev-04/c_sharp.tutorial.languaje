@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/069. linq_orderBy_and_thenBy/070. linq_orderBy_and_thenBy.csproj": {}
+  },
+  "projects": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/069. linq_orderBy_and_thenBy/070. linq_orderBy_and_thenBy.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/069. linq_orderBy_and_thenBy/070. linq_orderBy_and_thenBy.csproj",
+        "projectName": "070. linq_orderBy_and_thenBy",
+        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/069. linq_orderBy_and_thenBy/070. linq_orderBy_and_thenBy.csproj",
+        "packagesPath": "/home/oscar/.nuget/packages/",
+        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/069. linq_orderBy_and_thenBy/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/oscar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

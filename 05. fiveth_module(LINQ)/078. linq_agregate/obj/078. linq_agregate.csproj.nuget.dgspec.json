@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/078. linq_agregate/078. linq_agregate.csproj": {}
+  },
+  "projects": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/078. linq_agregate/078. linq_agregate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/078. linq_agregate/078. linq_agregate.csproj",
+        "projectName": "078. linq_agregate",
+        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/078. linq_agregate/078. linq_agregate.csproj",
+        "packagesPath": "/home/oscar/.nuget/packages/",
+        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/078. linq_agregate/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/oscar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
