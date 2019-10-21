@@ -1591,9 +1591,72 @@ Nos retorna el primer registro donde la persona sea menor de edad.
 
 Asi que estas dos directivas nos pueden servir en el momento en el que necesitamos un registro que cumpla con una condicion y lo queramos del mismo tipo osea, si es un int, la variable sera int, si es class la variable sera class, etc...
 
-# LINQ - Select ( proyecciones )
+# LINQ - Select y proyecciones
+Nos permite como su nombre lo dice seleccionar x valor, por lo general en una lista de numeros nos tomara un numero, pero en una clase o entidad, al encontrar un a coincidencia nos traera la entidad completa.
+
+El uso es bastante simple (debemos usar el where antes de para hacer el  filtrado, ya que select solo selecciona l apropiedad a tomar, no la filtra):
+
+var justName = personas.Where(x => x.Age < 18).Select(x => x.Name).FirstOrDefault();
+
+Entonces seria esto:
+
+De personas, treame las  coincidencias donde la propiedad edad es menor que 18(Where), de esas coincidencia seleccioname la propiedad name(Select) y solo dame la primera coincidencia de todas(FirstOrDefault).
+
+Obviamnete si quieres todas las coincidencias usas el ToList() y pues obviamente  deberas iterarlo.
+
+A veces no solo necesitamos una propiedad por lo que nos vemos obligados a hacer PROYECCIONES las cuales por lo general se llevan a cabo con tipos anonimos, seria casi lo mismo solo que la expresion lambda del Select() cambia un poco:
+
+var anonimas = personas.Where(x => x.Age < 18).Select(x => new { Name = x.Name, Age = x.Age }).FirstOrDefault();
+
+Si te fijas bien, lo unico que vambio fue la expresion lambda del select, entonces te explico.
+
+Al incluir el new {} que anteriormente lo hemos visto y que no es mas que un tipo anonimo, lo que hacemos es que en el momento de la consulta lo creamos y llenamos con los datos de la consulta si te fijas hace esto:
+
+Name = x.Name => osea le asigna a la propiedad Name del anonimo, el valor Name de la consulta a la entidad.
+Age = x.Age => igual que con name le asigna el valor al anonimo desde la entidad.
+
+Y listo, eso es.
+
+El select por lo general es bastante aplicable cuando solo quieres una propiedad especifica de la consulta realizada, ya sea el id, nombre, ya que te evitas el tener que almacenar en memoria la instancia completa de la entidad.
 
 # LINQ - skip y take
+Son dos directivas de mucha ayuda a la hora de hacer las consultas a lista, y como su nombre lo indica, toman y evaden.
+
+1. take => toma como parametro la cantidad de elementos que tomara de la lista, los demas los  ignora
+2. skip => toma como parametro la cantidad de elementos que se ignoraran de la lista. Por lo general, luego del skip se le da paso al take para saber que hacer con los demas elementos.
+
+Tomar solo los dos primeros elementos de una lista:
+
+var numero = numeros.Take(2).ToList();
+
+Ignorar los 2 primeros y tomar los 3 que le siguen:
+
+var ignoreAndTake = numeros.Skip(2).Take(3).ToList();
+
+Pero aun hay mas, ya que lo puedes combinar con el Where el cual hara un filtro, y a esa lista resultado del filtro se le aplicara el skip y take y demas:
+
+var whereAndTake = numeros.Where(x => x > 4).Skip(2).Take(3).ToList();
+
+Asi que puedes hacer uso del skip y del take a la hora de paginar consultas por ejemplo.
+
+# LINQ - SkipWhile y TakeWhile
+Son directivas parecidad a las dos que analisamos hace un momento, estas tienen una funcion algo basica pero muy usada:
+
+1. takewhile => toma los elemento que cumplen con una condicion la cual se instancia en una expresion lambda, en el momento en que encuentra algun elemento que no cumple la condicion, se detiene, y retorna los elementos que hasta ese entonces habian cumplido
+
+2. skipwhile => examina los elementos de la lista para ver si cumplen con una condicion, si asi es, los ignora, hasta que llega a un elemento que no cumple la condicion, entonces, toma todos los elementos restantes.
+
+Ejemplo:
+
+Examina la lista, traeme los primeros que cumplen con la expresion lambda en este caso que sea menor que 6:
+
+var takeW = numeros.TakeWhile(x => x < 6).ToList();
+
+Examina la lista, traeme los primeros que cumplen con la expresion lmbda, si la cumplen ignoralos, hasya que llegue a donde un elemento que  no la cumpla y pues, apartir de el retorna todos los demas valores.
+
+var skipW = numeros.SkipWhile(x => x < 6).ToList();
+
+Asi que ya sabes, el movimiento con los skip y take, usalos con modestia.
 
 # LINQ - GroupBy
 
