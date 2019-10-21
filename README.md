@@ -1659,19 +1659,143 @@ var skipW = numeros.SkipWhile(x => x < 6).ToList();
 Asi que ya sabes, el movimiento con los skip y take, usalos con modestia.
 
 # LINQ - GroupBy
+Podemos agrupar elementos de una coleccion segun una propiedad que los mismos posean. Por ejemplo, agruparlos segun sean par e impar.
+
+En si si le damos una condicion, el almacenara los elemento entre los que cumplen y los que no cumplen la condicion. Osea siempre habra mas de una colecion resultante.
+
+Su sintaxis es bastante basica:
+
+var nombreVariable = nombreColeccion.Group(condicion_a_cumplir);
+
+Por ejemplo:
+
+Agrupar entre pares e impares:
+
+var groupParEImpar = listado.GroupBy(x => x % 2 == 0);
+
+Para acceder a los elementos usamos "Keys" la cual representa los grupos creados a partir de la condicion, en este caso dos, par o impar.
+
+Para acceder al key solo escribes el nombre de resultado para el groupBy luego el key, ejemplo:
+
+groupParEImpar.Key => pero esto es una coleccion asi que tienes que iterarlo con un foreach.
+
+foreach(var clase in groupParEImpar)
+{
+    Console.WriteLine(groupParEImpar.Key);
+}
+
+Y asi muestras las distintas Keys que se crearon.
+
+Y si lo que necesitas es mostrar los elemetos, pues a ese mismo codigo le agregas un foreach luego de mostrar la key, asi:
+
+foreach(var clase in groupParEImpar)
+{
+    Console.WriteLine(groupParEImpar.Key);
+    foreach(var item in clase)
+    {
+        Console.WriteLine(item);
+    }
+}
+
+Como notaste en el segundo foreach no accedemos a la coleccion principal, sino a la coleccion recien iterada por el foreach padre que en este caso le llamamos clase.
+
+Tambien puedes crear tus grupos personalizados, ejemplo:
+
+var groupDePersonas = personas.GroupBy(x =>
+{
+    if(x.Age <= 20)
+    {
+        return "Menor que 20";
+    }
+    else if(x.Age >= 21 && x.Age <= 40)
+    {
+        return "Entre 21 y 40";
+    }
+    else 
+    {
+        return "Mas de 41";
+    }
+});
+
+Si notas usando un if para cumplir una serie de condiciones y con el return dar una catalogacion la cual el groupBy usara como grupo podemos clasificas a las personas de una entidad segun su edad. Recuerda que son funciones anonimas y podemos hacerlas tan complejas como queramos.
 
 # LINQ - Any y All
+Son directivas que nos permiten saber si una coleccion commpleta cumple con una condicion preestablecida.
+
+All => se da una condicion y si todos los elementos de la coleccion cumplen con ella retorna true, sino, pues obviamente retorna false.
+
+Any => se da una condicion y si existe algun valor, al menos uno que la cumpla, retorna true, y pues, si no existe ninguno, te retornara false.
 
 # LINQ - Sum
+Su nombre lo dice todo, sirve para sumar.
+
+Si tienes una lista de tipo numerico (int, decimal, float, double, etc...) solo usa el nombre de la lista mas la directiva, asi:
+
+nombreLista.Sum();
+
+Y listo, si tienes una lista de entidades, debes darle referencia acerca de que propiedad quieres sumar, osea:
+
+listaEntidades.Sum(x => x.Sueldo);
+listaEntidades.Sum(x => x.Edad);
+
+Y listo, tambien puedes crear tipos anonimos y asignarle esos valores por ejemplo:
+
+var anonimos = new {
+    SueldoTotal = listaEntidades.Sum(x => x.Sueldo),
+    EdadTotal = listaEntidades.Sum(x => x.Edad)
+};
+
+Y listo, asi de simple, asi de facil.
 
 # LINQ - Min, Max, Average
+Son tres directivas muy simples y de facil uso:
+
+Min => te retornara el valor minimo que encuentre.
+Max => te retornara el valor maximo que encuentre.
+Average => te retornara el  promedio de todos los valores, osea, la suma de todos entre el total de elementos.
+
+Asi que:
+
+var min = nombreLista.Min() => retornara el valor minimo
+var max = nombreLista.Max() => retornara el valor maximo
+var average = nombreLista.Average() => retornara el promedio
+
+Obviamente tambien podemos usarlo con entidades o datos mas complejos, ejemplo:
+
+var edadMinima = entidad.Min(x => x.Edad);
+var salarioMaximo = entidad.Max(x => x.Salario);
+
+Y asi por el estilo.
 
 # LINQ - Aggregate
+Nos permite hacer una operacion entre todos los elementos de una coleccion.
 
+Por ejemplo, multiplicar todos los elementos de una coleccion.
 
+var producto = listado.Agregate((anterior, actual) => anterior * actual);
 
+Es posible que hayas quedado algo confuso, pero te explico.
 
+Agregate funciona tomando dos numeros por operacion, en este caso les llame anterior y actual, y en mi caso los fui multiplicando, pero se pueden restar (obviamente no los sumaras porque para eso esta la directiva Sum()) el hecho es que de la coleccion el va tomando elementos de dos en dos, y ya en la operacion que hagas con la expresion lambda haras lo que quieras con ellos.
 
-# SEXTO MODULO ( BASE DE DATOS )
+En el caso de uso de datos complejos (entidades, etc...), es mas reconmedable hacer una lista solo con los datos de la entidad que quieras, y luego usasa el agregate.
+
+Ejemplo:
+
+Primero creas una lista con le valor de las propiedades que deseas:
+
+var allEdad = personas.Select(x => x.Age);
+
+Y luego usas el agregate con esa lista recien creada:
+
+var edadProduct = allEdad.Aggregate((an, ac) => an * ac);
+
+Pero como ya hemos visto en temas anteriores puedes usar mas de una directiva LINQ en una consulta asi que unimos todo esto y da esto:
+
+var allEdadCompuesta = personas.Select(x => x.Age).Aggregate((an, ac) => an * ac);
+
+Y listo.
+
+# SEXTO MODULO ( ADO.Net )
 
 # Leyendo el appconfig.json desde C#

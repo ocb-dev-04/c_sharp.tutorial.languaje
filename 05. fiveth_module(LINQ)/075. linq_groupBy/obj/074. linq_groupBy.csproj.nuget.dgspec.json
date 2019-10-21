@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/074. linq_groupBy/074. linq_groupBy.csproj": {}
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/075. linq_groupBy/074. linq_groupBy.csproj": {}
   },
   "projects": {
-    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/074. linq_groupBy/074. linq_groupBy.csproj": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/075. linq_groupBy/074. linq_groupBy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/074. linq_groupBy/074. linq_groupBy.csproj",
+        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/075. linq_groupBy/074. linq_groupBy.csproj",
         "projectName": "074. linq_groupBy",
-        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/074. linq_groupBy/074. linq_groupBy.csproj",
+        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/075. linq_groupBy/074. linq_groupBy.csproj",
         "packagesPath": "/home/oscar/.nuget/packages/",
-        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/074. linq_groupBy/obj/",
+        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/075. linq_groupBy/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"

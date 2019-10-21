@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/076. linq_sum/076. linq_sum.csproj",
+      "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/077. linq_sum/076. linq_sum.csproj",
       "projectName": "076. linq_sum",
-      "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/076. linq_sum/076. linq_sum.csproj",
+      "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/077. linq_sum/076. linq_sum.csproj",
       "packagesPath": "/home/oscar/.nuget/packages/",
-      "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/076. linq_sum/obj/",
+      "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/077. linq_sum/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

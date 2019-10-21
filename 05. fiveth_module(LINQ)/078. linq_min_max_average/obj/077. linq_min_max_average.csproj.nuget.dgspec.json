@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/077. linq_min_max_average/077. linq_min_max_average.csproj": {}
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/078. linq_min_max_average/077. linq_min_max_average.csproj": {}
   },
   "projects": {
-    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/077. linq_min_max_average/077. linq_min_max_average.csproj": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/078. linq_min_max_average/077. linq_min_max_average.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/077. linq_min_max_average/077. linq_min_max_average.csproj",
+        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/078. linq_min_max_average/077. linq_min_max_average.csproj",
         "projectName": "077. linq_min_max_average",
-        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/077. linq_min_max_average/077. linq_min_max_average.csproj",
+        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/078. linq_min_max_average/077. linq_min_max_average.csproj",
         "packagesPath": "/home/oscar/.nuget/packages/",
-        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/077. linq_min_max_average/obj/",
+        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/05. fiveth_module(LINQ)/078. linq_min_max_average/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
