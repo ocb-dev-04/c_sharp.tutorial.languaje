@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/080. local_functions/080. local_functions.csproj": {}
+  },
+  "projects": {
+    "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/080. local_functions/080. local_functions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/080. local_functions/080. local_functions.csproj",
+        "projectName": "080. local_functions",
+        "projectPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/080. local_functions/080. local_functions.csproj",
+        "packagesPath": "/home/oscar/.nuget/packages/",
+        "outputPath": "/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/080. local_functions/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/oscar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1796,6 +1796,8 @@ var allEdadCompuesta = personas.Select(x => x.Age).Aggregate((an, ac) => an * ac
 
 Y listo.
 
-# SEXTO MODULO ( ADO.Net )
+# SEXTO MODULO ( ADO.Net Core )
+
+A partir de aqui, las cosas cambian, estas secciones de acceso a datos estan cradas en base a ADO.Net Core, por lo tanto va relacionado con Entity Framework Core y desarrollo multiplataforma, asi que no intentes esto si estas usando .Net Framework y Entity Framework.
 
 # Leyendo el appconfig.json desde C#
