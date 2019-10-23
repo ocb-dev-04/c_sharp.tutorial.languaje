@@ -7,9 +7,9 @@ namespace _019._magic_strings
         // obviamnte si vas a usar el enum desde otro archivo pues declaralo publico
         enum StringEnum 
         {
-            Succesful = "ERR_04",
-            ClientNotFound = "ERR_05",
-            InternError = "ERR_06"
+            // Succesful = "ERR_04",
+            // ClientNotFound = "ERR_05",
+            // InternError = "ERR_06"
         };
         
         static void Main(string[] args)

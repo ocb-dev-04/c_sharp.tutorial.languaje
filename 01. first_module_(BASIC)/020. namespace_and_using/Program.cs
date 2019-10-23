@@ -7,7 +7,7 @@ namespace _020._namespace_and_using
     {
         static void Main(string[] args)
         {
-            var nu = new UserMetods(); // instanciamos la clase que traemos desde el namespace agregado con el using
+            // var nu = new UserMetods(); // instanciamos la clase que traemos desde el namespace agregado con el using
         }
     }
 }

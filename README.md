@@ -1796,8 +1796,136 @@ var allEdadCompuesta = personas.Select(x => x.Age).Aggregate((an, ac) => an * ac
 
 Y listo.
 
+# Extras de C# en veriones relativamente nuevas (C# 7 y C# 8)
+
+# Funciones locales -> C# 7
+Declarar una funcion dentro de otra. Y pues como es mas que obvio el scope o alcance de la misma se limita a la funcion donde fue declarada.
+
+Podemos usarla cuando tenemos que hacer procesos no tan generales, y que solo se ejecutan en cierto bloque de codigo.
+
+Para declarar una funcion local basta con crearla dentro de otra, ejemplo:
+
+// declaramos la funcion interna
+void FuncionLocal()
+{
+    Console.WriteLine("funcion interna");
+
+    // declaramos otra funcion local
+    void FuncionLocal2()
+    {
+        Console.WriteLine("Segunda funcion, dentro de la interna");
+    }
+    // invocamos la funcion local 2
+    FuncionLocal2();
+}
+
+// invocamos la funcion local
+FuncionLocal();
+
+Y ya, asi de simple.
+
+# Patron de igualacion ( Operador is )
+Si quieres verificar si un objeto es de un tipo especfico ya no deberas ocupar dos lineas como se hacia antes(con el as el cual retornaba un tipo o un nulo, y luego debias validar para castear en caso de ser necesario), sino solo una.
+
+La sintaxis es esta, y por lo general se usa en condicionales:
+
+if(objeto is TipoDeObjeto nombre_variable)
+{
+    ... codigo
+    ... codigo
+}
+
+Osea:
+
+if(numeros is int numUse)
+{
+    Console.WriteLine("Es entero");
+}else{
+    Console.WriteLine("No es entero");
+}
+
+En si lo que hacemos es, si la variable es de este tipo, ejecutame el bloque del if y la referencia interna a la variable es el nombre que te paso al final, osea que:
+
+numeros => es el objeto a verificar
+is => el operador en si
+int => el tipo que se quiere verificar
+numUse => el nombre de referencia interno (dentro del boque if obviamente) y con el cual identificaremos el objeto verificado una vez este verificado.
+
+# Patron de igualacion ( Switch - C# 7 )
+Podemos usar el switch como un if integrado para enviarle tipos y qye ya en el se decida si es de un tipo u otro, hacer esto u lo otro.
+
+Asi como por lo general dedimos que:
+
+case 2:
+    ... codigo
+
+Pues ahora en ves de un valor, toma un tipo en especifico para saber que hacer. Osea pasamos clases y en base a la clase que sea hacer x o y cosa.
+
+switch(figura)
+{
+    case Triangulo t:
+        Console.WriteLine($"Triangulo {t.Anchura} {t.Altura} {t.Base}");
+        break;
+    // primero ponemos el rectangulo que pueded variar en caso de que los lados sean iguales sera un cuadrado
+    case Rectangulo sq when sq.Altura == sq.Anchura:
+        Console.WriteLine($"Cuadrado {sq.Anchura} {sq.Altura}");
+        break;
+    // y entonces al final ponemos la opcion del reactangulo la cual seria como por defecto
+    // pasa igual que con el try catch() que pones la exception por defecto al final
+    case Rectangulo r:
+        Console.WriteLine($"Rectangulo {r.Anchura} {r.Altura}");
+        break;
+    default:
+        Console.WriteLine("Otro");
+        break;
+}
+
+# Separadores de digitos
+Nos sirve para hacer nuestro codigo mas legible en cuanto a numeros grandes.
+
+Podemos definir una variable asi:
+
+var numero = 56987845653145;
+
+Pero seria algo dificil leerlo, pero con el separador de digitos:
+
+var numero = 56_987_845_653_145;
+
+Asi divides el numero por las cifras de mil, dejando mas legible el numero. No necesariamente debes poner un underscore(_) puedes poner muchos juntos, aunque no tendria mucho sentido.
+
+var numero = 56____987_845__653____145;
+
+Y seria exactamente igual.
+
+Esto lo puedes usar tambien con decimales, doubles etc..
+
+decimal decimales = 56464_56465.568_994;
+
+Y como te puedes dar cuenta, puedes poner el separador donde quieras, aunqu en el anterior ejemplo no es muy logica su ubicacion.
+
+Para usarlo debes tener pendiente algunas reglas:
+
+1. No se usa el separador al iniciar un numero => _2840
+2. No se usa el separador al terminar un numero => 2840_
+3. No se usa el separador antes ni despues de un punto => 52_.23 o 52._23
+
+# Expresiones como miembros de una clase
+
+
+# Errores de expresiones
+
+
+# Variables Out - C# 7
+
+
+# Diferencias entre clases abstractas e interfaces Antes/Despues de C# 8
+
+
+
+
+
 # SEXTO MODULO ( ADO.Net Core )
 
-A partir de aqui, las cosas cambian, estas secciones de acceso a datos estan cradas en base a ADO.Net Core, por lo tanto va relacionado con Entity Framework Core y desarrollo multiplataforma, asi que no intentes esto si estas usando .Net Framework y Entity Framework.
+A partir de aqui, las cosas cambian, estas secciones de acceso a datos estan creadas en base a ADO.Net Core, por lo tanto va relacionado con Entity Framework Core y desarrollo multiplataforma, asi que no intentes esto si estas usando .Net Framework y Entity Framework.
 
 # Leyendo el appconfig.json desde C#

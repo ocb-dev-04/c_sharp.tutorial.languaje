@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/bin/Debug/netcoreapp2.2/081. igualation_pattern_(is).deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/bin/Debug/netcoreapp2.2/081. igualation_pattern_(is).runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/bin/Debug/netcoreapp2.2/081. igualation_pattern_(is).runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/bin/Debug/netcoreapp2.2/081. igualation_pattern_(is).dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/bin/Debug/netcoreapp2.2/081. igualation_pattern_(is).pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/obj/Debug/netcoreapp2.2/081. igualation_pattern_(is).csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/obj/Debug/netcoreapp2.2/081. igualation_pattern_(is).csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/obj/Debug/netcoreapp2.2/081. igualation_pattern_(is).AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/obj/Debug/netcoreapp2.2/081. igualation_pattern_(is).AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/obj/Debug/netcoreapp2.2/081. igualation_pattern_(is).dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/081. igualation_pattern_(is)/obj/Debug/netcoreapp2.2/081. igualation_pattern_(is).pdb

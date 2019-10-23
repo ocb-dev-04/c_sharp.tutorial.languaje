@@ -1,0 +1,11 @@
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/bin/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).deps.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/bin/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).runtimeconfig.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/bin/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).runtimeconfig.dev.json
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/bin/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/bin/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).pdb
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/obj/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).csprojAssemblyReference.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/obj/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).csproj.CoreCompileInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/obj/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).AssemblyInfoInputs.cache
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/obj/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).AssemblyInfo.cs
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/obj/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).dll
+/home/oscar/all_devs_codes/c#/c_sharp.tutorial.languaje/06. sixth_module(C# - 7, 8 - News)/082. 081. igualation_pattern_(switch)/obj/Debug/netcoreapp2.2/082. 081. igualation_pattern_(switch).pdb
