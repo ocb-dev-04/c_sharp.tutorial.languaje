@@ -6,7 +6,16 @@ namespace _086._out_variable
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // intentamos parcear de string a datetime
+            if(DateTime.TryParse("2019-04-20", out DateTime fecha))
+            {
+                // codigo en caso de que  se parsee bien
+            }
+            else
+            {
+                // codigo para hacer en caso de que se parsee mal
+            }
+
         }
     }
 }

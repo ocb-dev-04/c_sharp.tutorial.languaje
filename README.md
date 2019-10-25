@@ -1910,22 +1910,69 @@ Para usarlo debes tener pendiente algunas reglas:
 3. No se usa el separador antes ni despues de un punto => 52_.23 o 52._23
 
 # Expresiones como miembros de una clase
+Con la llegada de C# 7, tambien hizo su entrada la posibilidad de agregar expresiones a propiedades e incluso constructores.
 
+De esta manera si necesitamos hacer un codigo de solo una linea o invocar un metodo, pues nos limitamos a usar llaves y solo usamos el operador de asignacion o arrow (=>)
+
+Propiedad normal:
+
+public int Nombre { get; set; }
+
+Propiedada con expresion:
+
+public int Nombre => TomarNombre();
+Solo ejectutamos el metodo que asigna el nombre, o podemos asignarlo directamente.
+
+Igual aplica con los constructores y demas propiedades de una clase.
 
 # Errores de expresiones
+Ya hemos visto la asignaciond en expresiones en C# ahora tambine podemos lanzar errores en expresiones. Lo cual es muy util si solo queremos que se ejecute una linea de codigo, como por ejemplo un query con ef core y linq, el cual puede mostrar un error.
 
+Por ejemplo, haciendo un metodo para dividir dos numeros, si el divisor no es cero, que realice la funcion, si es cero que lance una excepcion.
+
+double Dividir(double a, double b) 
+    => (b != 0) ? a / b : throw new ApplicationException("Denominador no puede ser 0");
 
 # Variables Out - C# 7
+En si nos permite declarar una variable del tipo seleccionado en el mometno en que cual se le ha asignado su valor, por ejemplo, luego de parsear algun tipo de dato y queremos que al ser parseado correctamente se almacene en una variable pues out nos facilita ese proceso.
 
+if(DateTime.TryParse("2019-04-20", out DateTime fecha))
+
+Intentamos parsear la fecha de string a datetime, luego si ves uso out para asignarle ese valor ya parseado a la variable de tipo DateTime a la cual le puse nombre de fecha, con esta, se puede usar el valor anteriormente parceado en todo el bloque del if, sin la necesidad de definira, antes ni despues.
 
 # Diferencias entre clases abstractas e interfaces Antes/Despues de C# 8
 
+Clase abstracta:
 
+1. No puede ser instanciada
+2. Su objetivo es ser heredada popr las clases hijas.
+3. Podemos definir metodos abstractos: los cuales no requieren implementacion, sino que se permite a las clases derivadas heredarlos y modificarlos (sobreescribirlo - override)
+4. Y pues, al ser una clase puede guardar estado, osea puede guardar campos y propiedades.
 
+Interfaces:
 
+1. En si es un contrato el cual se hereda y se implementa(por obligacion)
+2. Posee metoodos sin implementaciones, osea, metodos sin cuerpo. Obviamnete para que la clase que la herede los implemente.
+
+Que tienen en parecido:
+
+1. Ninguna de las dos puede ser instanciada.
+2. Poseen la particularidad de que obligan a otras clases a implementar los metodos.
+3. Son abstracciones con las cuales podemos programar para aprovechar el polimorfismo y hacer el software mas flexible.
+
+Diferencias antes de C# 8:
+
+1. Clases abstractas pueden ofrecer declaraciones por defecto, las interfaces no. Por si se te olvida, las implementaciones por defecto son aquellos metodos que le definimos una funcionabilidad y son de tipo virtual, de manera que es decision propia hacer un override a este metodo o implementarlo tal como esta definido en la clase abstracta.
+2. Las clases abstractas pueden tener atributos, campos y propiedades, los cuales pueden almacenar estados e informacion pertinente, una interfaz no hace nada de eso.
+3. Las clases abstractas pueden utilizar el modificador de acceso protected, el cual permite el uso de propiedades y campos de una clase solo a clases derivadas.
+
+Diferencias despues de C# 8:
+
+1. Podemos usar implementaciones por defecto en interfaces.
+2. Respecto a las demas diferencias siguen igual, las clases abstractas pueden terner propiedades y el uso del modificador de acceso protected, mientra que las interfaces no.
+
+EN RESUMEN: la diferencia en C# 8 es que podemos incluir implementaciones por defecto en interfaces.
 
 # SEXTO MODULO ( ADO.Net Core )
 
 A partir de aqui, las cosas cambian, estas secciones de acceso a datos estan creadas en base a ADO.Net Core, por lo tanto va relacionado con Entity Framework Core y desarrollo multiplataforma, asi que no intentes esto si estas usando .Net Framework y Entity Framework.
-
-# Leyendo el appconfig.json desde C#
